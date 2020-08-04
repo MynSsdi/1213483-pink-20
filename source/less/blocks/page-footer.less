@@ -1,0 +1,144 @@
+.page-footer {
+  text-align: center;
+}
+
+.page-footer__logo {
+  display: block;
+  margin-top: 64px;
+  margin-bottom: 43px;
+}
+
+.page-footer__logo-image:hover .page-footer__logo-mobile  path {
+  fill: #d22856;
+}
+
+.page-footer__logo-image:active .page-footer__logo-mobile  path {
+  opacity: 0.3;
+}
+
+.page-footer__logo-image:active .page-footer__logo-mobile  path:not(:last-of-type) {
+  fill: #283645;
+}
+
+.page-footer__social-list {
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  width: 190px;
+}
+
+.page-footer__social-item {
+  margin-right: 17px;
+  width: 46px;
+  height: 46px;
+  line-height: 50px;
+  vertical-align: middle;
+  border: 3px solid rgba(40, 54, 69, 0.1);
+  border-radius: 50%;
+  background-color: #fefefe;
+}
+
+.page-footer__social-item:hover {
+  border-color: #283645;
+}
+
+.page-footer__social-item:active {
+  opacity: 0.1;
+}
+
+.page-footer__social-item:last-of-type {
+  margin-right: 0;
+}
+
+.page-footer__social-link {
+  display: block;
+
+}
+
+.page-footer__developer {
+  display: block;
+  margin: 50px 0;
+}
+
+.page-footer__developer-text {
+  font-size: 14px;
+  line-height: 1.29;
+  color: #283645;
+}
+
+.page-footer__social-icon {
+  fill: #D22856;
+}
+
+.page-footer__developer-image {
+  width: 40px;
+  height: auto;
+  margin-left: 15px;
+  vertical-align: middle;
+}
+
+.page-footer__developer-image:hover path {
+  fill: #283645;
+}
+
+.page-footer__developer-image:active path {
+  opacity: 0.3;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    //margin: 0 20px 0 20px;
+    width: 660px;
+    margin: 0 auto;
+    min-height: 127px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .page-footer__logo,
+  .page-footer__developer {
+    margin: 0;
+  }
+  .page-footer__social-list {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    //margin: 0 20px 0 20px;
+    width: 940px;
+    margin: 0 auto;
+    min-height: 127px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-footer__logo-desktop {
+    display: block;
+  }
+
+  .page-footer__logo-image:hover .page-footer__logo-desktop  path {
+    fill: #d22856;
+  }
+
+  .page-footer__logo-image:active .page-footer__logo-desktop  path {
+    opacity: 0.3;
+  }
+
+  .page-footer__logo-image:active .page-footer__logo-mobile  path:nth-of-type(n+4){
+    fill: #283645;
+  }
+
+  .page-footer__logo,
+  .page-footer__developer {
+    margin: 0;
+  }
+  .page-footer__social-list {
+    display: flex;
+    align-items: center;
+  }
+}
