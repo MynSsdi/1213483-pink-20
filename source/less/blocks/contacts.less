@@ -1,0 +1,120 @@
+.contacts {
+  text-align: center;
+}
+
+.contacts__slogan {
+  margin-top: 40px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #283645;
+}
+
+.contacts__list {
+  margin-top: 35px;
+  padding: 0;
+  list-style: none;
+}
+
+.contacts__list-item {
+  margin-bottom: 18px;
+}
+
+.contacts__head {
+  font-size: 18px;
+  font-weight: bold;
+  color: #283645;
+}
+
+.contacts__description {
+  font-size: 24px;
+  font-weight: 300;
+  color: #d22856;
+}
+
+.contacts__address-description {
+  line-height: 30px;
+}
+
+.contacts__tel {
+  text-align: center;
+  padding: 0 50px;
+}
+
+.contacts__tel-link,
+.contacts__mail-link {
+  text-decoration: none;
+}
+
+.contacts__mail-link:hover {
+  color: #283645;
+  text-decoration: underline;
+}
+
+.contacts__mail-link:active {
+  color: rgba(40, 54, 69, 0.3);
+  text-decoration: none;
+}
+
+.contacts__mail {
+  margin-bottom: 21px;
+  padding: 0 30px;
+}
+
+.contacts__address {
+  padding: 0 50px;
+}
+
+.contacts__map {
+  position: relative;
+}
+
+.contacts__map::before {
+  position: relative;
+  display: block;
+  content: "";
+  min-height: 158px;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg version='1.0' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='595.28px' height='61.905px' viewBox='0 0 595.28 61.905' enable-background='new 0 0 595.28 61.905' xml:space='preserve'%3e%3cpolygon fill='%23ffffff' points='297.64,61.905 0,0 595.28,0 '/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: contain;
+}
+
+.contacts__map-iframe {
+  margin-top: -150px;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__slogan {
+    margin: 0 144px 44px 144px;
+    font-size: 40px;
+  }
+  .contacts__list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .contacts__tel,
+  .contacts__mail,
+  .contacts__address {
+    padding: 0;
+    width: 237px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__slogan {
+    width: 470px;
+    margin: 0 auto;
+    margin-top: 75px;
+    margin-bottom: 70px;
+    font-size: 50px;
+    font-weight: 300;
+  }
+  .contacts__mail {
+    order: 3;
+  }
+  .contacts__address {
+    order: 2;
+  }
+}

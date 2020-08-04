@@ -1,0 +1,36 @@
+@tablet-width: 660px;
+@desktop-width: 1200px;
+@retina-dpi: 144dpi;
+@retina-dppx: 1.5dppx;
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  background-color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+  width: 320px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.visually-hidden { display: none; }
+
+.button {
+  border: 0;
+}
+
+@media (min-width: @tablet-width) {
+.wrapper {
+  width: 660px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+.wrapper {
+  width: 1200px;
+  }
+}
