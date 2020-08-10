@@ -1,8 +1,10 @@
 .history__slogan {
   width: 281px;
-  margin: 49px auto;
+  margin: 0 auto;
+  margin-top: 45px;
   font-size: 14px;
-  line-height: 2.14;
+  line-height: 30px;
+  letter-spacing: 0.5px;
   text-align: center;
   color: #283645;
 }
@@ -44,9 +46,15 @@
 }
 
 .history__list {
-  margin: 0 22px;
+  margin: 0 20px;
+  margin-top: 35px;
+  margin-bottom: 0px;
   padding: 0;
   list-style: none;
+}
+
+.label-form {
+  margin-left: 22px;
 }
 
 .history__persona-item {
@@ -59,7 +67,7 @@
 
 .history__persona-label,
 .history__contact-label {
-  margin-bottom: 12px;
+  margin-bottom: 5px;
 //  margin-right: 20px;
   display: block;
   font-size: 14px;
@@ -67,6 +75,10 @@
   text-transform: uppercase;
   text-align: left;
   color: #d22856;
+}
+
+.history__contact-label {
+  margin-bottom: 4px;
 }
 
 .history__persona-input,
@@ -91,15 +103,22 @@
 }
 
 .history__form-progress {
+  margin: 0;
+  padding: 0;
   background-color: #f2f2f2;
+}
+
+.history__form-check {
+  margin: 0;
+  padding: 0 24px;
 }
 
 .history__form-legend {
   width: 100%;
-  padding-top: 41px;
-  margin-bottom: 42px;
+  padding-top: 37px;
+  margin-bottom: 3px;
   font-size: 14px;
-  line-height: 1.29;
+  line-height: 18px;
   text-transform: uppercase;
   text-align: center;
   background-color: #f2f2f2;
@@ -116,12 +135,12 @@
 }
 
 .history__progress-item {
-  margin-bottom: 47px;
+  margin-bottom: 43px;
   min-height: 35px;
 }
 
 .history__progress-item:last-of-type {
-  margin-bottom: 44px;
+  margin-bottom: 43px;
 }
 
 .history__progress-input {
@@ -129,16 +148,19 @@
 }
 
 .history__progress-label {
+  margin: 0;
   font-size: 18px;
-  line-height: 1.67;
+  line-height: 37px;
+  letter-spacing: 0.2px;
   text-align: left;
+  vertical-align: middle;
   color: #283645;
 }
 
 .history__progress-label::before {
   display: inline-block;
   content: "";
-  margin-right: 33px;
+  margin-right: 20px;
   width: 35px;
   height: 35px;
   vertical-align: middle;
@@ -164,7 +186,7 @@
 }
 
 .history__application-item:last-of-type {
-  margin-bottom: 44px;
+  margin-bottom: 40px;
 }
 
 .history__application-input {
@@ -174,7 +196,7 @@
 .history__application-label {
   position: relative;
   font-size: 18px;
-  line-height: 1.67;
+  line-height: 30px;
   text-align: left;
   color: #283645;
 }
@@ -184,8 +206,8 @@
   margin-right: 33px;
   display: inline-block;
   content: "";
-  width: 37px;
-  height: 36px;
+  width: 38px;
+  height: 38px;
   vertical-align: middle;
   border: 2px solid #e5e5e5;
   border-radius: 50%;
@@ -194,17 +216,17 @@
 
 .history__application-input:checked ~ .history__application-label::after {
   position: absolute;
-  top: 9px;
-  left: 13px;
+  top: 4px;
+  left: 11px;
   content: "";
-  width: 11px;
-  height: 11px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   background-color: #d22856;
 }
 
 .history__form-contact {
-  margin-top: 41px;
+  margin-top: -2px;
 }
 
 .net__item-label::before {
@@ -223,32 +245,34 @@
 
 .history__emotion-legend {
   background-color: #ffffff;
-  margin-bottom: 19px;
+  margin-bottom: 17px;
 }
 
 .history__emotion {
   box-sizing: border-box;
-  margin-bottom: 52px;
-  margin-left: 22px;
-  margin-right: 22px;
-  padding-top: 23px;
-  padding-left: 19px;
-  padding-right: 22px;
-  width: 276px;
-  min-height: 197px;
+  margin-bottom: 44px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 13px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 280px;
+  min-height: 201px;
   border: 2px solid #e5e5e5;
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
-  line-height: 1.67;
+  line-height: 30px;
+  letter-spacing: 0.5px;
   text-align: left;
   color: #283645;
 }
 
 .history__button-submit {
   margin: 0 auto;
+  margin-left: 20px;
   text-align: center;
-  width: 276px;
-  height: 59px;
+  width: 280px;
+  height: 63px;
   color: #ffffff;
   background-color: transparent;
   text-transform: uppercase;
@@ -276,9 +300,10 @@
 }
 
 .history__note {
-  margin-top: 46px;
+  margin-top: 34px;
+  margin-left: 4px;
   font-size: 14px;
-  line-height: 2.14;
+  line-height: 30px;
   text-transform: uppercase;
   text-align: center;
   color: #283645;
@@ -286,6 +311,43 @@
 
 .history__note-star {
   color: #d22856;
+}
+
+.history__surname-label {
+  margin-bottom: 5px;
+}
+
+.input-form {
+  height: 63px;
+  width: 280px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.history__persona-item {
+  margin-bottom: 18px;
+}
+
+.history__contact-input {
+  height: 63px;
+}
+
+.history__contact-item:first-of-type {
+  margin-bottom: 19px;
+}
+
+.history__application-list {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 33px;
+}
+
+.history__application-item:first-of-type {
+  margin-bottom: 37px;
+}
+
+.history__application-item:nth-last-of-type(2) {
+  margin-bottom: 38px;
 }
 
 @media (min-width: @tablet-width) {
