@@ -1,13 +1,14 @@
 .tariff {
-  min-height: 508px;
+  min-height: 528px;
   position: relative;
   background-color: #f2f2f2;
 }
 
 .tariff::before {
   display: block;
+  margin-top: -20px;
   content: "";
-  min-height: 62px;
+  height: 70px;
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg version='1.0' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='1200px' height='94.074px' viewBox='0 0 1200 94.074' enable-background='new 0 0 1200 94.074' xml:space='preserve'%3e%3cpolygon fill='%23ffffff' points='1200,0 0,0 0,94.074 '/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-size: cover;
@@ -19,7 +20,7 @@
 
 .tariff__table {
   width: auto;
-  margin-top: 65px;
+  margin-top: 77px;
   position: relative;
   top: 0;
   left: 0;
@@ -28,9 +29,9 @@
 
 .tariff__table-head {
   box-sizing: border-box;
-  padding: 14px 70px 25px 90px;
+  padding: 14px 96px 29px 92px;
   width: 276px;
-  height: 94px;
+  height:94px;
   text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
@@ -46,25 +47,25 @@
 .tariff__table-standart::before {
   position: absolute;
   top: 0px;
-  left: -3px;
+  left: -2px;
   display: block;
   content: "";
-  width: 73px;
-  height: 70px;
+  width: 74px;
+  height: 74px;
   background-image: url("../img/bg-hit.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  background-size: 73px 70px;
+  background-size: 74px 74px;
 }
 
 .tariff__table-standart::after {
   position: absolute;
-  top: 9px;
-  left: 1px;
+  top: 12px;
+  left: 6px;
   display: block;
   content: "ХИТ";
   width: 74px;
-  height: 73px;
+  height: 74px;
   font-size: 12px;
   line-height: 21px;
   color: #ffffff;
@@ -73,33 +74,40 @@
 }
 
 .tariff__table-type {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
-  line-height: 1.67;
+  line-height: 30px;
 }
 
 .tariff__table-price {
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 1.25;
+  font-size: 18px;
+  font-weight: lighter;
+  line-height: 25px;
 }
 
 .tariff__table-cell {
   position: relative;
   box-sizing: border-box;
-  padding-left: 22px;
-  height: 59px;
+  padding-left: 18px;
+  height: 60px;
   border: 2px solid #e5e5e5;
-  font-size: 18px;
-  line-height: 1.67;
+  font-size: 14px;
+  line-height: 30px;
   text-transform: uppercase;
   text-align: left;
   background-color: #ffffff;
   color: #283645;
 }
 
+.tariff__cell-filter3,
+.tariff__cell-smile3,
+.tariff__cell-comment3 {
+  padding-left: 20px;
+}
+
 .tariff__icon {
   position: absolute;
+  top: 18px;
   right: 18px;
 }
 
@@ -162,7 +170,7 @@
 }
 
 .tariff__slider-input--slide2:checked ~ .tariff__table {
-  left: -240px;
+  left: -249px;
 }
 
 .tariff__slider-input--slide3:checked ~ .tariff__table {
@@ -176,9 +184,22 @@
 }
 
 @media (min-width: @tablet-width) {
+  .tariff {
+    min-height: 410px;
+    position: relative;
+    background-color: #f2f2f2;
+  }
+
+  .tariff::before {
+    margin-top: -16px;
+    height: 70px;
+  }
+
   .tariff__table {
     position: static;
-    margin-top: 40px;
+    margin-top: 49px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
   .tariff__table-head1,
   .tariff__table-cell1 {
@@ -195,63 +216,120 @@
     display: none;
   }
   .tariff__table-head {
-    padding: 19px 39px 13px 40px;
-    width: 152px;
+    padding: 0;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 12px;
+    padding-bottom: 10px;
+    width: 160px;
     height: 75px;
   }
-  .tariff__table-type {
-    font-size: 16px;
-    line-height: 1.88;
+
+  .tariff__table-head:nth-of-type(2) {
+      border-left: 0;
+      border-top-left-radius: 5px;
   }
-  .tariff__table-price {
-    font-size: 18px;
-    line-height: 1.67;
+
+  .tariff__table-head:nth-of-type(3) {
+      padding-left: 12px;
   }
+
+  .tariff__table-head:last-of-type {
+      border-right: 0;
+      border-top-right-radius: 5px;
+      padding-left: 10px;
+  }
+
   .tariff__table-cell {
     width: 153px;
     height: 45px;
     padding-left: 15px;
     font-size: 14px;
     line-height: 30px;
+    letter-spacing: 0.4px;
     text-transform: none;
   }
 
+  .tariff__table-cell1--smile {
+    padding-top: 5px;
+  }
+
+  .tariff__table-cell1--comment {
+    padding-top: 8px;
+  }
+
   .tariff__table-standart::before {
-    top: 0;
-    left: 0;
+    top: 0px;
+    left: 0px;
     width: 61px;
     height: 61px;
     background-image: url("../img/bg-hit-tablet.svg");
+    background-size: 60px 60px;
   }
 
   .tariff__table-standart::after {
-    top: 2px;
-    left: 2px;
+    position: absolute;
+    top: 6px;
+    left: 0px;
+    display: block;
+    content: "ХИТ";
     width: 61px;
     height: 61px;
-    font-weight: 600;
+    font-size: 14px;
+    font-weight: lighter;
+    line-height: 30px;
+    color: #ffffff;
+    font-weight: normal;
+    transform: rotate(-45deg);
   }
 
   .tariff__icon {
     position: absolute;
     top: 50%;
     right: 50%;
-    margin-top: -10.5px;
-    margin-right: -15.5px;
+    margin-top: -11px;
+    margin-right: -14px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .tariff {
+    padding-bottom: 100px;
+  }
+
+  .tariff::before {
+    margin-top: -19px;
+    height: 90px;
+  }
+
   .tariff__table {
     position: static;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 62px;
   }
 
   .tariff__table-head {
-    padding: 19px 67px 13px 70px;
-    width: 233px;
+    padding-top: 18px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 17px;
+    width: 237px;
     height: 94px;
+  }
+
+  .tariff__table-head:nth-of-type(2) {
+    width: 238px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .tariff__table-head:nth-of-type(3) {
+    width: 240px;
+  }
+
+  .tariff__table-head:last-of-type {
+    padding-left: 43px;
+    padding-right: 39px;
   }
 
   .tariff__table-type {
@@ -275,5 +353,21 @@
 
   .tariff__table-cell1 {
     width: 234px;
+  }
+
+  .tariff__table-standart::before {
+    left: 1px;
+    width: 74px;
+    height: 74px;
+    background-image: url("../img/bg-hit.svg");
+    background-size: 74px 74px;
+  }
+
+  .tariff__table-standart::after {
+    top: 10px;
+    left: 5px;
+    content: "ХИТ";
+    width: 71px;
+    height: 71px;
   }
 }

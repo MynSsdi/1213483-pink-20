@@ -97,11 +97,11 @@
                   <img class="photo__item-image photo__item-image1" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама дня">
                 </picture>
               </a>
-              <div class="photo__item-content">
+              <div class="photo__item-content photo__item-content--anna">
                 <b class="photo__item-name">Анна</b>
                 <time class="photo__item-time">(5 минут назад)</time>
-                <p class="photo__item-description">
-                  Прыгать&nbsp;или&nbsp;нет?&nbsp;Напишите&nbsp;в комментарии&nbsp;свой&nbsp;совет&nbsp;и&nbsp;смотрите прямую трансляцию&nbsp;в&nbsp;перископе, задавайте&nbsp;свои&nbsp;вопросы!
+                <p class="photo__item-description photo__item-description--panorama">
+                  Прыгать или нет? Напишите в комментарии свой совет и смотрите&nbsp;прямую трансляцию в перископе, задавайте свои вопросы!
                 </p>
                 <button class="photo__item-like photo__item-like1">Нравится:215</button>
               </div>
@@ -119,7 +119,7 @@
                 <time class="photo__item-time">(5 часов назад)</time>
               </div>
               <p class="photo__item-description">
-                Вчера&nbsp;на&nbsp;луну&nbsp;летал,&nbsp;сегодня&nbsp;в руки&nbsp;к&nbsp;нам&nbsp;попал.
+                Вчера он на луну летал, сегодня в руки к нам попал.
               </p>
               <button class="photo__item-like">Нравится:356</button>
             </li>
@@ -140,7 +140,7 @@
               </p>
               <button class="photo__item-like">Нравится:666</button>
             </li>
-            <li class="photo__item">
+            <li class="photo__item photo__item--boris">
               <a class="photo__item-link" href="#">
                 <picture>
                   <source srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x" width="300" height="300" media="(min-width: 660px) and (max-width: 1200px)">
@@ -174,7 +174,7 @@
               </p>
               <button class="photo__item-like">Нравится:4</button>
             </li>
-            <li class="photo__item">
+            <li class="photo__item photo__item--maksim">
               <a class="photo__item-link" href="#">
                 <picture>
                   <source srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x" width="300" height="300" media="(min-width: 660px) and (max-width: 1200px)">
@@ -206,7 +206,7 @@
               <p class="photo__item-description">
                 Всем GM и взаимные лайки!
               </p>
-              <button class="photo__item-like">Нравится:256</button>
+              <button class="photo__item-like">Нравится:2560</button>
             </li>
           </ul>
         </div>
@@ -219,7 +219,7 @@
             Выкладывайте&nbsp;все,&nbsp;что&nbsp;накопилось&nbsp;в телефоне!
           </p>
         </div>
-          <div class="post__customization">
+          <div class="post__customization wrapper">
             <div class="post__customization-wrapper wrapper">
               <div class="post__image">
                 <picture>
@@ -268,8 +268,8 @@
         </div>
       </section>
     </main>
-    <footer class="page-footer">
-      <a class="page-footer__logo">
+    <footer class="page-footer page-footer__desktop">
+      <a class="page-footer__logo page-footer__logo--mobile">
         <svg class="page-footer__logo-image" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146px" height="40px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
           <!-- Мобильная версия -->
           <g class="page-footer__logo-mobile">
@@ -320,7 +320,7 @@
       </ul>
       <a class="page-footer__developer">
         <span class="page-footer__developer-text">Разработано</span>
-        <svg class="page-footer__developer-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path fill="#D22856" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
+        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="27" height="34" viewBox="0 0 27 34"><path fill="#D22856" d="M13.62.017L13.472 0 0 1.412v24.661l13.472 8.017 13.43-7.99.042-.026V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.547-1.212 11.547 1.212v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.013 1.415 5.904 3.513-.86.507-5.031-2.992-.013 1.415 3.827 2.275-.782.523-3.032-1.787-.013 1.413 1.852 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.015 1.044-7.941-4.728-.015 1.416 7.979 4.796.017 1.076-7.972-4.741-.013 1.415 8.021 4.821.045.026 8.143-4.872v-1.268l-.011-.148v-3.761l3.415-2.036v10.02L13.472 31.85 1.925 24.979v-9.852z"/></svg>
       </a>
     </footer>
   </body>
