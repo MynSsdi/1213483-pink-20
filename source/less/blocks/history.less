@@ -595,7 +595,7 @@
 @media (min-width: @desktop-width) {
   .history__slogan {
     width: 752px;
-    margin: 100px auto 89px auto;
+    margin: 94px auto 83px auto;
   }
 
   .history-wrapper {
@@ -605,7 +605,7 @@
   .history__form {
     flex-direction: row;
     flex-wrap: wrap;
-    width: 936px;
+    width: 940px;
     margin: 0 auto;
   }
 
@@ -614,13 +614,19 @@
   }
 
   .history__form-persona {
-    width: 500px;
+    width: 502px;
   }
 
   .history__persona-item {
     display: flex;
     justify-content: space-between;
-    width: 433px;
+    width: 435px;
+    margin-left: -1px;
+    margin-bottom: 54px;
+  }
+
+  .history__persona-item:nth-of-type(2) {
+    margin-bottom: 51px;
   }
 
   .history__persona-item:last-of-type {
@@ -628,69 +634,110 @@
   }
 
   .history__surname-input {
-    width: 336px;
+    width: 340px;
   }
 
   .history__name-input {
-    width: 376px;
+    width: 380px;
   }
 
   .history__patronymic-input {
-    width: 337px;
+    width: 340px;
   }
 
   .history__form-application {
-    min-height: 300px;
-    margin-top: -15px;
+    min-height: 301px;
+    margin-top: -14px;
     margin-bottom: 62px;
-    width: 431px;
+    width: 432px;
+  }
+
+  .history__application-item {
+    margin-left: 13px;
   }
 
   .history__form-contact {
+    margin-top: -4px;
     min-height: 158px;
   }
 
   .history__contact {
     display: flex;
-  }
-
-  .history__contact {
+    flex-direction: row;
     margin: 0 60px;
+    margin-top: 31px;
   }
 
   .history__contact-item {
-    margin: 0;
+    width: 373px;
+  }
+
+  .history__contact-item:first-of-type {
+    margin-left: -2px;
+  }
+
+  .history__contact-item::after {
+    right: -2px;
+    width: 61px;
+    height: 61px;
   }
 
   .history__tel {
-    margin-right: 74px;
+    margin-right: 72px;
   }
 
   .history__contact-input {
     margin: 0;
-    width: 371px;
+    width: 373px;
+  }
+
+  .history__contact-label {
+    margin-bottom: -5px;
   }
 
   .history__form-progress {
+    margin-top: -6px;
     width: 936px;
     min-height: 228px;
   }
 
   .history__progress {
+    margin-left: 58px;
+    margin-right: 55px;
+    margin-top: 42px;
+    margin-bottom: 11px;
+    width: 820px;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
   }
 
-  .history__progress-desktop:not(:last-of-type) {
-    margin-right: 60px;
+  .history__progress-item:nth-of-type(3n + 1) {
+    width: 270px;
+    margin-right: 45px;
+  }
+
+  .history__progress-item:nth-of-type(3n + 2){
+    width: 270px;
+    margin-right: 24px;
   }
 
   .history__form-emotion {
+    margin-top: -6px;
     width: 936px;
+    height: 222px;
   }
 
   .history__emotion {
-    width: 816px;
+    margin-top: 19px;
+    width: 820px;
+    height: 128px;
     min-height: 124px;
+  }
+
+  .history__button-submit {
+    margin-top: -1px;
+    margin-left: 21px;
+    height: 63px;
   }
 }
