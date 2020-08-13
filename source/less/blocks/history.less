@@ -68,7 +68,6 @@
 .history__persona-label,
 .history__contact-label {
   margin-bottom: 5px;
-//  margin-right: 20px;
   display: block;
   font-size: 14px;
   line-height: 2.14;
@@ -124,6 +123,40 @@
   display: block;
   margin: 0 auto;
 }
+
+.history__form-check {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.history__progress {
+  display: flex;
+  flex-direction: column;
+}
+
+.history__selfie {
+   order: 1;
+ }
+
+ .history__norris {
+   order: 3;
+ }
+
+ .history__tower {
+   order: 5;
+ }
+
+ .history__burn {
+   order: 2;
+ }
+
+ .history__souvenir {
+   order: 4;
+ }
+
+ .history__hotel {
+   order: 6;
+ }
 
 .history__progress-head {
   width: 250px;
@@ -308,6 +341,10 @@
   color: #d22856;
 }
 
+.history__note-desktop {
+  display: none;
+}
+
 .history__surname-label {
   margin-bottom: 5px;
 }
@@ -367,15 +404,6 @@
     width: 616px;
   }
 
-  /* .history__persona-label,
-  .history__persona-input {
-    display: inline-block;
-  } */
-
-  /* .history__label {
-    margin-right: 20px;
-  } */
-
   .history__form-fieldset:not(:first-of-type) {
     border: 2px solid #e5e5e5;
     background-color: #ffffff;
@@ -399,6 +427,8 @@
   }
 
   .history__form-check {
+    margin-left: 0;
+    margin-right: 0;
     width: 436px;
   }
 
@@ -712,6 +742,30 @@
     flex-wrap: wrap;
   }
 
+ .history__selfie {
+    order: 1;
+  }
+
+  .history__norris {
+    order: 2;
+  }
+
+  .history__tower {
+    order: 3;
+  }
+
+  .history__burn {
+    order: 4;
+  }
+
+  .history__souvenir {
+    order: 5;
+  }
+
+  .history__hotel {
+    order: 6;
+  }
+
   .history__progress-item:nth-of-type(3n + 1) {
     width: 270px;
     margin-right: 45px;
@@ -720,6 +774,10 @@
   .history__progress-item:nth-of-type(3n + 2){
     width: 270px;
     margin-right: 24px;
+  }
+
+  .history__note-desktop {
+      display: inline;
   }
 
   .history__form-emotion {
