@@ -5,6 +5,12 @@ const less = require("gulp-less");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
+const minify = require("gulp-csso");
+const rename = require("gulp-rename");
+const imagemin = require("gulp-imagemin");
+const webp = require("gulp-webp");
+const svgstore = require("gulp-svgstore");
+const run = require('run-sequence');
 
 // Styles
 
@@ -16,12 +22,48 @@ const styles = () => {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(minify())
+    .pipe(rename("styles.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("source/css"))
     .pipe(sync.stream());
 }
 
 exports.styles = styles;
+
+// Images jpg,png,svg
+
+const images = () => {
+  return gulp.src("source/img/**/*.{png,jpg,svg}")
+   .pipe(imagemin([
+     imagemin.optipng({optimizationLevel: 3}),
+     imagemin.mozjpeg({progressive: true}),
+     imagemin.svgo()
+   ]))
+}
+
+exports.images = images;
+
+// Images Webp
+
+const createWebp = () => {
+  return gulp.src("source/img/**/*.{png,jpg}")
+    .pipe(webp({quality: 90}))
+    .pipe(gulp.dest("source/img"))
+}
+
+exports.webp = createWebp;
+
+// Sprite
+
+const sprite = () => {
+  return gulp.src("source/img/**/icon-*.svg")
+      .pipe(svgstore())
+      .pipe(rename("sprite.svg"))
+      .pipe(gulp.dest("source/img"))
+}
+
+exports.sprite = sprite;
 
 // Server
 
@@ -49,3 +91,19 @@ const watcher = () => {
 exports.default = gulp.series(
   styles, server, watcher
 );
+
+// Build
+
+/*const build = gulp.series (
+  "styles",
+  "sprite"
+);
+
+exports.build = build;*/
+/*gulp.task("build", function(done) {
+  run(
+    "styles",
+    "sprite",
+    done
+  );
+});*/
