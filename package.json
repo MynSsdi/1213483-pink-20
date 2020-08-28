@@ -21,7 +21,8 @@
     "posthtml-include": "^1.4.3",
     "run-sequence": "^2.2.1",
     "stylelint": "13.6.x",
-    "stylelint-config-htmlacademy": "0.1.x"
+    "stylelint-config-htmlacademy": "0.1.x",
+    "terser": "^5.2.1"
   },
   "scripts": {
     "start": "gulp",
@@ -32,7 +33,9 @@
     "build": "gulp build",
     "generate": "gulp html",
     "images": "gulp images",
-    "webp": "gulp createWebp"
+    "webp": "gulp createWebp",
+    "clean": "gulp clean",
+    "copy": "gulp copy"
   },
   "browserslist": [
     "last 2 versions",
