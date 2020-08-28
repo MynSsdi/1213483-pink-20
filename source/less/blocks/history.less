@@ -16,6 +16,10 @@
 
 .input-form {
   outline: 0;
+  height: 63px;
+  width: 280px;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .input-form:hover {
@@ -26,13 +30,13 @@
   border-color: #d22856;
 }
 
-.label-form:hover:before {
+/*.label-form:hover:before {
   border-color: #283645;
 }
 
 .label-form:focus:before {
   border-color: #d22856;
-}
+}*/
 
 .history__form-fieldset {
   border: 0;
@@ -48,7 +52,7 @@
 .history__list {
   margin: 0 20px;
   margin-top: 35px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   padding: 0;
   list-style: none;
 }
@@ -58,7 +62,7 @@
 }
 
 .history__persona-item {
-  margin-bottom: 25px;
+  margin-bottom: 18px;
 }
 
 .history__persona-item:last-of-type {
@@ -135,28 +139,28 @@
 }
 
 .history__selfie {
-   order: 1;
- }
+  order: 1;
+}
 
- .history__norris {
-   order: 3;
- }
+.history__norris {
+  order: 3;
+}
 
- .history__tower {
-   order: 5;
- }
+.history__tower {
+  order: 5;
+}
 
- .history__burn {
-   order: 2;
- }
+.history__burn {
+  order: 2;
+}
 
- .history__souvenir {
-   order: 4;
- }
+.history__souvenir {
+  order: 4;
+}
 
- .history__hotel {
-   order: 6;
- }
+.history__hotel {
+  order: 6;
+}
 
 .history__progress-head {
   width: 250px;
@@ -287,7 +291,7 @@
   width: 280px;
   height: 201px;
   border: 2px solid #e5e5e5;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 18px;
   line-height: 30px;
   letter-spacing: 0.5px;
@@ -302,7 +306,6 @@
   width: 280px;
   height: 63px;
   color: #ffffff;
-  background-color: transparent;
   text-transform: uppercase;
   font-size: 18px;
   font-weight: bold;
@@ -349,17 +352,6 @@
   margin-bottom: 5px;
 }
 
-.input-form {
-  height: 63px;
-  width: 280px;
-  font-size: 18px;
-  line-height: 30px;
-}
-
-.history__persona-item {
-  margin-bottom: 18px;
-}
-
 .history__contact-input {
   height: 63px;
 }
@@ -369,8 +361,8 @@
 }
 
 .history__application-list {
-  margin-left: 0px;
-  margin-right: 0px;
+  margin-left: 0;
+  margin-right: 0;
   margin-top: 33px;
 }
 
@@ -412,7 +404,7 @@
   .history__form-legend {
     display: block;
     width: auto;
-    padding-top: 0px;
+    padding-top: 0;
     background-color: #ffffff;
   }
 
@@ -449,6 +441,7 @@
   .history__emotion-head {
     width: 260px;
   }
+
   .history__application-head {
     width: 368px;
   }
@@ -481,7 +474,7 @@
   }
 
   .history__name-input {
-    width: 555px;
+    width: 565px;
   }
 
   .history__patronymic-input {
@@ -502,6 +495,7 @@
   }
 
   .history__contact-item {
+    position: relative;
     width: 500px;
     display: flex;
     flex-direction: column;
@@ -523,10 +517,6 @@
 
   .history__contact {
     margin-top: 33px;
-  }
-
-  .history__contact-item {
-    position: relative;
   }
 
   .history__contact-item::after {
@@ -587,11 +577,11 @@
   }
 
   .history__emotion {
-      display: block;
-      width: 500px;
-      height: 193px;
-      margin: 0 auto;
-      margin-top: 20px;
+    display: block;
+    width: 500px;
+    height: 193px;
+    margin: 0 auto;
+    margin-top: 20px;
   }
 
   .history__form-controls {
@@ -617,11 +607,8 @@
   .history__persona-input {
     width: 525px;
   }
-
-  .history__name-input {
-    width: 565px;
-  }
 }
+
 @media (min-width: @desktop-width) {
   .history__slogan {
     width: 752px;
@@ -629,7 +616,7 @@
   }
 
   .history-wrapper {
-      width: 100%;
+    width: 100%;
   }
 
   .history__form {
@@ -742,7 +729,7 @@
     flex-wrap: wrap;
   }
 
- .history__selfie {
+  .history__selfie {
     order: 1;
   }
 
@@ -771,13 +758,13 @@
     margin-right: 45px;
   }
 
-  .history__progress-item:nth-of-type(3n + 2){
+  .history__progress-item:nth-of-type(3n + 2) {
     width: 270px;
     margin-right: 24px;
   }
 
   .history__note-desktop {
-      display: inline;
+    display: inline;
   }
 
   .history__form-emotion {

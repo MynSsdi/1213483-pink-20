@@ -102,10 +102,11 @@
 
 @media (min-width: @tablet-width) {
   .contacts__slogan {
-    margin: 45px 144px 0px 144px;
+    margin: 45px 144px 0 144px;
     font-size: 40px;
     line-height: 55px;
   }
+
   .contacts__list {
     display: flex;
     justify-content: space-around;
@@ -115,6 +116,7 @@
     margin-top: 33px;
     margin-left: 10px;
   }
+
   .contacts__tel,
   .contacts__mail,
   .contacts__address {
@@ -182,6 +184,8 @@
     margin: 0;
     padding: 0;
     align-self: stretch;
+    margin-left: 5px;
+    order: 2;
   }
 
   .contacts__description {
@@ -192,15 +196,8 @@
     margin-left: -20px;
   }
 
-  .contacts__address {
-    margin-left: 5px;
-  }
-
   .contacts__mail {
     order: 3;
-  }
-  .contacts__address {
-    order: 2;
   }
 
   .contacts__map {

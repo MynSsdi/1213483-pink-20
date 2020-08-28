@@ -8,15 +8,15 @@
   margin-bottom: 35px;
 }
 
-.page-footer__logo-image:hover .page-footer__logo-mobile  path {
+.page-footer__logo-image:hover .page-footer__logo-mobile path {
   fill: #d22856;
 }
 
-.page-footer__logo-image:active .page-footer__logo-mobile  path {
+.page-footer__logo-image:active .page-footer__logo-mobile path {
   opacity: 0.3;
 }
 
-.page-footer__logo-image:active .page-footer__logo-mobile  path:not(:last-of-type) {
+.page-footer__logo-image:active .page-footer__logo-mobile path:not(:last-of-type) {
   fill: #283645;
 }
 
@@ -71,7 +71,7 @@
 }
 
 .page-footer__social-icon {
-  fill: #D22856;
+  fill: #d22856;
 }
 
 .page-footer__developer-image {
@@ -89,7 +89,6 @@
 
 @media (min-width: @tablet-width) {
   .page-footer {
-    //margin: 0 20px 0 20px;
     width: 620px;
     margin: 0 auto;
 
@@ -98,10 +97,12 @@
     justify-content: space-between;
     align-items: center;
   }
+
   .page-footer__logo,
   .page-footer__developer {
     margin: 0;
   }
+
   .page-footer__social-list {
     display: flex;
     align-items: center;
@@ -124,15 +125,15 @@
     display: block;
   }
 
-  .page-footer__logo-image:hover .page-footer__logo-desktop  path {
+  .page-footer__logo-image:hover .page-footer__logo-desktop path {
     fill: #d22856;
   }
 
-  .page-footer__logo-image:active .page-footer__logo-desktop  path {
+  .page-footer__logo-image:active .page-footer__logo-desktop path {
     opacity: 0.3;
   }
 
-  .page-footer__logo-image:active .page-footer__logo-mobile  path:nth-of-type(n+4){
+  .page-footer__logo-image:active .page-footer__logo-mobile path:nth-of-type(n+4) {
     fill: #283645;
   }
 
@@ -153,7 +154,7 @@
 
   .page-footer__social-list {
     width: 168px;
-    margin: 0px;
+    margin: 0;
     margin-left: 5px;
   }
 
@@ -176,24 +177,24 @@
 }
 
 // photo.html
-  .page-footer__logo--mobile {
-    margin-top: 40px;
-    margin-bottom: 35px;
-  }
+.page-footer__logo--mobile {
+  margin-top: 40px;
+  margin-bottom: 35px;
+}
 
 // form.html
+.page-footer--form {
+  margin-top: 10px;
+}
+
+@media (min-width: @tablet-width) {
   .page-footer--form {
-    margin-top: 10px;
+    margin-top: 47px;
   }
+}
 
-  @media (min-width: @tablet-width) {
-    .page-footer--form {
-      margin-top: 47px;
-    }
+@media (min-width: @desktop-width) {
+  .page-footer--form {
+    margin-top: 34px;
   }
-
-  @media (min-width: @desktop-width) {
-    .page-footer--form {
-      margin-top: 34px;
-    }
-  }
+}

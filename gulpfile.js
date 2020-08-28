@@ -12,6 +12,17 @@ const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const run = require('run-sequence');
 const del = require("del");
+const posthtml = require("gulp-posthtml");
+
+const html = () => {
+  return gulp.src("source/*.html")
+    .pipe(posthtml([
+      include()
+    ]))
+    .pipe(gulp.dest("build"));
+}
+
+exports.html = html;
 
 // Styles
 
@@ -36,11 +47,11 @@ exports.styles = styles;
 
 const images = () => {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
-   .pipe(imagemin([
-     imagemin.optipng({optimizationLevel: 3}),
-     imagemin.mozjpeg({progressive: true}),
-     imagemin.svgo()
-   ]))
+    .pipe(imagemin([
+        imagemin.optipng({optimizationLevel: 3}),
+        imagemin.mozjpeg({progressive: true}),
+        imagemin.svgo()
+    ]))
 }
 
 exports.images = images;
@@ -103,22 +114,38 @@ const copy = () => {
       base: "source"
   })
   .pipe(gulp.dest("build"));
-};
+}
 
 exports.copy = copy;
 
 const clean = () => {
   return del("build");
-};
+}
 
 exports.clean = clean;
 
-const build = gulp.series(
+/*gulp.task('build', (done) => gulp.series(
   "clean",
   "copy",
-  "css",
+  "styles",
+  "images",
+  "webp",
   "sprite",
-  "html"
-);
+  "html",
+  done
+));*/
+
+const build = (done) => {
+  return gulp.series(
+    "clean",
+    "copy",
+    "styles",
+    "images",
+    "webp",
+    "sprite",
+    "html"
+  );
+  done();
+}
 
 exports.build = build;
