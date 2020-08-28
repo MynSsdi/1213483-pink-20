@@ -55,6 +55,7 @@ const images = () => {
         imagemin.mozjpeg({progressive: true}),
         imagemin.svgo()
     ]))
+    .pipe(gulp.dest("build/img"));
 }
 
 exports.images = images;
@@ -64,10 +65,10 @@ exports.images = images;
 const createWebp = () => {
   return gulp.src("source/img/**/*.{png,jpg}")
     .pipe(webp({quality: 90}))
-    .pipe(gulp.dest("source/img"))
+    .pipe(gulp.dest("build/img"))
 }
 
-exports.webp = createWebp;
+exports.createWebp = createWebp;
 
 // Sprite
 
@@ -144,7 +145,7 @@ const build = (done) => {
     "copy",
     "styles",
     "images",
-    "webp",
+    "createWebp",
     "sprite",
     "html"
   );
