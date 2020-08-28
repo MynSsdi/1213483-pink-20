@@ -1,3 +1,5 @@
+"use strict"
+
 const gulp = require("gulp");
 const plumber = require("gulp-plumber");
 const sourcemap = require("gulp-sourcemaps");
@@ -13,6 +15,7 @@ const svgstore = require("gulp-svgstore");
 const run = require('run-sequence');
 const del = require("del");
 const posthtml = require("gulp-posthtml");
+const include = require("posthtml-include");
 
 const html = () => {
   return gulp.src("source/*.html")
