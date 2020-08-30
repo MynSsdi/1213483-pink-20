@@ -131,28 +131,14 @@ const clean = () => {
 
 exports.clean = clean;
 
-/*gulp.task('build', (done) => gulp.series(
-  "clean",
-  "copy",
-  "styles",
-  "images",
-  "webp",
-  "sprite",
-  "html",
-  done
-));*/
-
-const build = (done) => {
-  return gulp.series(
-    "clean",
-    "copy",
-    "styles",
-    "images",
-    "createWebp",
-    "sprite",
-    "html"
+const build = gulp.series(
+    clean,
+    copy,
+    styles,
+    images,
+    createWebp,
+    sprite,
+    html
   );
-  done();
-}
 
 exports.build = build;
