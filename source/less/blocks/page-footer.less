@@ -1,11 +1,11 @@
 .page-footer {
   text-align: center;
+  margin-top: -15px;
 }
 
 .page-footer__logo {
   display: block;
-  margin-top: 34px;
-  margin-bottom: 35px;
+  margin-bottom: 0;
 }
 
 .page-footer__logo-image:hover .page-footer__logo-mobile path {
@@ -61,10 +61,11 @@
   align-items: center;
   width: 130px;
   margin: 36px auto;
-  margin-top: 40px;
+  margin-top: 37px;
 }
 
 .page-footer__developer-text {
+  margin-right: 15px;
   font-size: 14px;
   line-height: 18px;
   color: #283645;
@@ -105,6 +106,10 @@
   .page-footer__logo,
   .page-footer__developer {
     margin: 0;
+  }
+
+  .page-footer__logo {
+    margin-top: -12px;
   }
 
   .page-footer__social-list {
@@ -190,18 +195,38 @@
 
 // photo.html
 .page-footer__logo--mobile {
-  margin-top: 40px;
+  margin-top: 50px;
   margin-bottom: 35px;
 }
 
+.page-footer--photo {
+  margin-top: -10px;
+}
+
+
+@media (min-width: @tablet-width) {
+  .page-footer__logo--mobile {
+    margin-top: 40px;
+  }
+}
+
 // form.html
+
+.page-footer__developer--form {
+  margin-top: 36px;
+}
+
 .page-footer--form {
-  margin-top: 10px;
+    margin-top: -5px;
 }
 
 @media (min-width: @tablet-width) {
   .page-footer--form {
     margin-top: 47px;
+  }
+
+  .page-footer__developer--form {
+    margin-top: 0;
   }
 }
 

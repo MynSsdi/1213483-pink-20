@@ -201,7 +201,17 @@
   }
 
   .contacts__map {
-    margin-top: -85px;
-    height: 502px;
+    overflow: hidden;
+    width: 100%;
+    margin-top: -95px;
+    height: 512px;
+  }
+
+  .contacts__map::before {
+    top: 0;
+    min-width: 1439px;
+    height: 123px;
+    background-position: 0 0;
+    background-size: contain;
   }
 }
