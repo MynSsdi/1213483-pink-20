@@ -73,7 +73,7 @@ exports.createWebp = createWebp;
 // Sprite
 
 const sprite = () => {
-  return gulp.src("source/img/**/icon-*.svg")
+  return gulp.src("source/img/**/*.svg")
       .pipe(svgstore())
       .pipe(rename("sprite.svg"))
       .pipe(gulp.dest("build/img"))
@@ -103,8 +103,6 @@ exports.server = server;
 const watcher = () => {
   gulp.watch("source/less/**/*.less", gulp.series("styles"));
   gulp.watch("source/*.html").on("change", sync.reload);
-  //gulp.watch("source/*.html", gulp.series("html"));
-  //gulp.watch("source/*.html", ["html"]).on("change", server.reload);
 }
 
 exports.default = gulp.series(
