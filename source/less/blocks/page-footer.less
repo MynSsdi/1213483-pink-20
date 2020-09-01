@@ -3,6 +3,10 @@
   margin-top: -15px;
 }
 
+.page-footer svg path {
+    fill: inherit;
+}
+
 .page-footer__logo {
   display: block;
   margin-bottom: 0;
@@ -71,8 +75,17 @@
   color: #283645;
 }
 
-#htmlacademy path {
+.page-footer__developer use {
   fill: #d22856;
+}
+
+.page-footer__developer:hover use {
+  fill: #283645;
+}
+
+.page-footer__developer:active use {
+  fill: #283645;
+  opacity: 0.3;
 }
 
 .page-footer__social-icon {
@@ -90,6 +103,14 @@
 
 .page-footer__developer-image:active path {
   opacity: 0.3;
+}
+
+.page-svg #logo-pink-blue-mobile path {
+  fill: #d22856;
+}
+
+.page-svg #logo-pink-blue-mobile g path {
+  fill: #283645;
 }
 
 @media (min-width: @tablet-width) {

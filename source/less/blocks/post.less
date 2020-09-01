@@ -69,10 +69,14 @@
 }
 
 .post__panorama-icon:active,
-.post__icon-brightness:active path,
+.post__icon-brightness:active,
 .post__icon-active {
   fill: #d22856;
   opacity: 1;
+}
+
+.post__icon-brightness:active  use {
+  fill: #d22856;
 }
 
 .post__icon-active:hover {
@@ -170,12 +174,6 @@
   opacity: 0.3;
   color: rgba(255, 255, 255, 0.3);
   background-color: #283645;
-}
-
-#icon-editor-crop,
-#icon-editor-fill,
-#icon-editor-contrast {
-  fill: #d22856;
 }
 
 @media (min-width: @tablet-width) {

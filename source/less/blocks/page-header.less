@@ -37,11 +37,19 @@
   height: 23px;
 }
 
-.page-header__logo:hover .page-header__logo-mobile path {
+.page-header svg path {
+    fill: inherit;
+}
+
+.page-header use {
+  fill: #ffffff;
+}
+
+.page-header__logo:hover use {
   fill: #d22856;
 }
 
-.page-header__logo:hover:active .page-header__logo-mobile path {
+.page-header__logo:active use {
   fill: #ffffff;
   opacity: 0.3;
 }
@@ -67,19 +75,11 @@
   margin-right: -25px;
 }
 
-.main-nav__toggle-burger:hover path {
+.main-nav__toggle:hover use {
   fill: #d22856;
 }
 
-.main-nav__toggle-burger:active {
-  opacity: 0.3;
-}
-
-.main-nav__toggle-cross:hover path {
-  fill: #d22856;
-}
-
-.main-nav__toggle-cross:active {
+.main-nav__toggle:active use {
   opacity: 0.3;
 }
 
