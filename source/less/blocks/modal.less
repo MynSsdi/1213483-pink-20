@@ -5,6 +5,10 @@
 
 @media (min-width: @tablet-width) {
   .modal-error {
+    position: absolute;
+    top: 1164px;
+    left: 50%;
+    margin-left: -230px;
     display: block;
     outline: 0;
     width: 460px;
@@ -12,19 +16,37 @@
     background-color: #ffffff;
     box-shadow: 0 7px 15px rgba(0,1,1,0.15);
     border-radius: 5px;
+    text-align: center;
   }
+
   .modal-error__header {
+    margin: 0 auto;
+    margin-top: 52px;
+    width: 270px;
     font-weight: bold;
     font-size: 30px;
     line-height: 40px;
     color: #000000;
   }
+
   .modal-error__text {
+    margin: 0 auto;
+    margin-top: 38px;
+    width: 300px;
     font-weight: normal;
     font-size: 18px;
     line-height: 24px;
     color: #283645;
   }
+
+  .modal-error__block-button {
+    line-height: 153px;
+    text-align: center;
+    vertical-align: middle;
+    height: 153px;
+    background-color: #ffffff;
+  }
+
   .modal-error__button {
     width: 296px;
     height: 59px;
@@ -37,7 +59,12 @@
     color: #ffffff;
     text-transform: uppercase;
   }
+
   .modal-success {
+    position: absolute;
+    top: 1638px;
+    left: 50%;
+    margin-left: -230px;
     display: block;
     outline: 0;
     width: 460px;
@@ -45,19 +72,38 @@
     background-color: #ffffff;
     box-shadow: 0 7px 15px rgba(0,1,1,0.15);
     border-radius: 5px;
+    text-align: center;
   }
+
   .modal-success__header {
+    margin: 0 auto;
+    margin-top: 49px;
+    width: 270px;
     font-weight: bold;
     font-size: 30px;
     line-height: 40px;
     color: #000000;
   }
+
   .modal-success__text {
+    margin: 0 auto;
+    margin-top: 35px;
+    width: 320px;
     font-weight: normal;
     font-size: 18px;
     line-height: 24px;
     color: #283645;
   }
+
+  .modal-success__block-button {
+    height: 163px;
+    line-height: 163px;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 35px;
+    background-color: #f2f2f2;
+  }
+
   .modal-success__button {
     width: 295px;
     height: 59px;
@@ -74,11 +120,58 @@
 
 @media (min-width: @desktop-width) {
   .modal-error {
+    top: 817px;
+    margin-left: -390px;
     width: 780px;
     height: 377px;
   }
+
+  .modal-error__header {
+    width: 330px;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px;
+    color: #000000;
+  }
+
+  .modal-error__text {
+    margin-top: 38px;
+    width: 351px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #283645;
+  }
+
+  .modal-error__block-button {
+    margin-top: 67px;
+    height: 163px;
+    line-height: 163px;
+    background-color: #f2f2f2;
+    text-align: center;
+    vertical-align: center;
+  }
+
   .modal-success {
+    top: 1275px;
+    margin-left: -390px;
     width: 780px;
     height: 377px;
+  }
+
+  .modal-success__header {
+    width: 396px;
+  }
+
+  .modal-success__text {
+    width: 378px;
+  }
+
+  .modal-success__block-button {
+    margin-top: 43px;
+  }
+
+  .modal-success__button {
+    width: 456px;
   }
 }
