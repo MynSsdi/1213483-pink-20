@@ -14,7 +14,7 @@
       <div class="page-header__controls">
         <div class="page-header__wrapper wrapper">
           <div class="page-header__head">
-            <a class="page-header__logo" href="#">
+            <a class="page-header__logo" href="index.html" tabindex="1">
               <svg class="page-header__logo-mobile" width="74.426" height="22.859">
                 <use xlink:href="#logo-pink-white-mobile"></use>
               </svg>
@@ -25,7 +25,7 @@
                 <use xlink:href="#logo-pink-white-desktop"></use>
               </svg>
             </a>
-            <button class="main-nav__toggle visually-hidden" type="button" value="открыть меню">
+            <button class="main-nav__toggle visually-hidden" type="button" value="открыть меню" tabindex="2">
               <svg class="main-nav__toggle-burger visually-hidden" x="0px" y="0px" width="49.945px" height="24.007px">
                 <use xlink:href="#icon-menu-burger"></use>
               </svg>
@@ -37,16 +37,16 @@
           <nav class="main-nav">
               <ul class="main-nav__list site-list">
                 <li class="site-list__item">
-                  <a class="site-list__item-link" href="index.html">Главная</a>
+                  <a class="site-list__item-link" href="index.html" tabindex="3">Главная</a>
                 </li>
                 <li class="site-list__item">
-                  <a class="site-list__item-link" href="photo.html">Фотографии</a>
+                  <a class="site-list__item-link" href="photo.html" tabindex="4">Фотографии</a>
                 </li>
                 <li class="site-list__item site-list__item--active">
-                  <a class="site-list__item-link" href="form.html">Конкурс</a>
+                  <a class="site-list__item-link" href="form.html" tabindex="5">Конкурс</a>
                 </li>
                 <li class="site-list__item">
-                  <a class="site-list__item-link" href="https://htmlacademy.ru/">HTML Academy</a>
+                  <a class="site-list__item-link" href="https://htmlacademy.ru/intensive/adaptive" tabindex="6">HTML Academy</a>
                 </li>
               </ul>
           </nav>
@@ -70,15 +70,15 @@
                 <ul class="history__persona history__list">
                   <li class="history__surname history__persona-item">
                     <label class="history__surname-label history__persona-label label-form" for="history__surname-id">Фамилия:</label>
-                    <input class="history__surname-input history__persona-input input-form" type="text" id="history__surname-id" placeholder="Укажите фамилию *" name="surname" required>
+                    <input class="history__surname-input history__persona-input input-form" type="text" id="history__surname-id" placeholder="Укажите фамилию *" name="surname" tabindex="7" required>
                   </li>
                   <li class="history__name history__persona-item">
                     <label class="history__name-label history__persona-label label-form" for="history__name-id">Имя:</label>
-                    <input class="history__name-input history__persona-input input-form" type="text" id="history__name-id" placeholder="Введите ваше имя *" name="name" required>
+                    <input class="history__name-input history__persona-input input-form" type="text" id="history__name-id" placeholder="Введите ваше имя *" name="name" tabindex="8" required>
                   </li>
                   <li class="history__patronymic history__persona-item">
                     <label class="history__patronymic-label history__persona-label label-form" for="history__patronymic-id">Отчество:</label>
-                    <input class="history__patronymic-input history__persona-input input-form" type="text" id="history__patronymic-id" placeholder="Ну и отчество тоже" name="surname">
+                    <input class="history__patronymic-input history__persona-input input-form" type="text" id="history__patronymic-id" placeholder="Ну и отчество тоже" name="surname" tabindex="9">
                   </li>
                 </ul>
               </div>
@@ -89,27 +89,27 @@
                   <ul class="history__progress history__list">
                       <li class="history__selfie history__progress-item">
                         <input class="history__selfie-input history__progress-input input-form" type="checkbox" id="history__selfie-id" name="progress" value="selfie" checked>
-                        <label class="history__selfie-label history__progress-label label-form" for="history__selfie-id">Сделал селфи с акулой</label>
+                        <label class="history__selfie-label history__progress-label label-form" for="history__selfie-id" tabindex="10">Сделал селфи с акулой</label>
                       </li>
                       <li class="history__norris history__progress-item">
                         <input class="history__norris-input history__progress-input input-form" type="checkbox" id="history__norris-id" name="progress" value="norris">
-                        <label class="history__norris-label history__progress-label label-form" for="history__norris-id">Видел Чака Норриса</label>
+                        <label class="history__norris-label history__progress-label label-form" for="history__norris-id" tabindex="12">Видел Чака Норриса</label>
                       </li>
                       <li class="history__tower history__progress-item">
                         <input class="history__tower-input history__progress-input input-form" type="checkbox" id="history__tower-id" name="progress" value="tower" checked>
-                        <label class="history__tower-label history__progress-label label-form" for="history__tower-id">Удержал башню</label>
+                        <label class="history__tower-label history__progress-label label-form" for="history__tower-id" tabindex="14">Удержал башню</label>
                       </li>
                       <li class="history__burn history__progress-item">
                         <input class="history__burn-input history__progress-input input-form" type="checkbox" id="history__burn-id" name="progress" value="burn" checked>
-                        <label class="history__burn-label history__progress-label label-form" for="history__burn-id">Обгорел на пляже</label>
+                        <label class="history__burn-label history__progress-label label-form" for="history__burn-id" tabindex="11">Обгорел на пляже</label>
                       </li>
                       <li class="history__souvenir history__progress-item">
                         <input class="history__souvenir-input history__progress-input input-form" type="checkbox" id="history__souvenir-id" name="progress" value="souvenir">
-                        <label class="history__souvenir-label history__progress-label label-form" for="history__souvenir-id">Накупил сувениров</label>
+                        <label class="history__souvenir-label history__progress-label label-form" for="history__souvenir-id" tabindex="13">Накупил сувениров</label>
                       </li>
                       <li class="history__hotel history__progress-item">
                         <input class="history__hotel-input history__progress-input input-form" type="checkbox" id="history__hotel-id" name="progress" value="hotel">
-                        <label class="history__hotel-label history__progress-label label-form" for="history__hotel-id">Разгромил отель</label>
+                        <label class="history__hotel-label history__progress-label label-form" for="history__hotel-id" tabindex="15">Разгромил отель</label>
                       </li>
                   </ul>
               </div>
@@ -120,11 +120,11 @@
                 <ul class="history__contact history__list">
                   <li class="history__tel history__contact-item">
                     <label class="history__tel-label history__contact-label label-form" for="history__tel-id">Номер телефона</label>
-                    <input class="history__tel-input history__contact-input input-form" type="tel" id="history__tel-id" placeholder="Номер, пожалуйста" name="tel">
+                    <input class="history__tel-input history__contact-input input-form" type="tel" id="history__tel-id" placeholder="Номер, пожалуйста" name="tel" tabindex="16">
                   </li>
                   <li class="history__email history__contact-item">
                     <label class="history__email-label history__contact-label label-form" for="history__email-id">Адрес почты</label>
-                    <input class="history__email-input history__contact-input input-form" type="email" id="history__email-id" placeholder="Введите почту *" name="email" required>
+                    <input class="history__email-input history__contact-input input-form" type="email" id="history__email-id" placeholder="Введите почту *" name="email"  tabindex="17" required>
                   </li>
                 </ul>
               </div>
@@ -135,15 +135,15 @@
                 <ul class="history__application-list history__list">
                   <li class="history__ios history__application-item">
                     <input class="history__ios-input history__application-input input-form" type="radio" id="history__ios-id" name="application" value="iOS" checked>
-                    <label class="history__ios-label history__application-label label-form" for="history__ios-id">Pink для iOS</label>
+                    <label class="history__ios-label history__application-label label-form" for="history__ios-id" tabindex="18">Pink для iOS</label>
                   </li>
                   <li class="history__android history__application-item">
                     <input class="history__android-input history__application-input input-form" type="radio" id="history__android-id" name="application" value="android">
-                    <label class="history__android-label history__application-label label-form" for="history__android-id">Pink на Android</label>
+                    <label class="history__android-label history__application-label label-form" for="history__android-id" tabindex="19">Pink на Android</label>
                   </li>
                   <li class="history__windows history__application-item">
                     <input class="history__windows-input history__application-input input-form" type="radio" id="history__windows-id" name="application" value="windows">
-                    <label class="history__windows-label history__application-label label-form" for="history__windows-id">Windows Phone</label>
+                    <label class="history__windows-label history__application-label label-form" for="history__windows-id" tabindex="20">Windows Phone</label>
                   </li>
                 </ul>
               </div>
@@ -151,12 +151,12 @@
             <fieldset class="history__form-fieldset history__form-emotion">
               <legend class="history__form-legend history__emotion-legend"><span class="history__form-span history__emotion-head">Опишите свои эмоции</span></legend>
               <div class="history-wrapper">
-                <textarea class="history__emotion">Можно прям в красках, не стесняясь в выражениях</textarea>
+                <textarea class="history__emotion" tabindex="21">Можно прям в красках, не стесняясь в выражениях</textarea>
               </div>
             </fieldset>
             <div class="history__form-controls history-wrapper">
               <div class="history__form-button">
-                <button class="history__button-submit" type="submit" value="Отправить форму">Отправить форму</button>
+                <button class="history__button-submit" type="submit" value="Отправить форму" tabindex="22">Отправить форму</button>
               </div>
               <p class="history__note"><span class="history__note-star">&ast;</span> &mdash; обязательные <span class="history__note-desktop">для заполнения </span>поля</p>
             </div>
@@ -164,52 +164,52 @@
       </section>
     </main>
     <footer class="page-footer page-footer--form">
-        <a class="page-footer__logo">
+        <a class="page-footer__logo" href="index.html" tabindex="23">
           <svg class="page-footer__logo-image page-footer__logo--mobile" x="0px" y="0px" width="145px" height="40px">
-              <use xlink:href="#logo-pink-blue-mobile"></use>
+              <use class="page-footer__logo-use" xlink:href="#logo-pink-blue-mobile"></use>
           </svg>
           <svg class="page-footer__logo-image page-footer__logo--desktop visually-hidden" x="0px" y="0px" width="145px" height="40px">
-              <use xlink:href="#logo-pink-blue-desktop"></use>
+              <use class="page-footer__logo-use" xlink:href="#logo-pink-blue-desktop"></use>
           </svg>
         </a>
         <ul class="page-footer__social-list">
           <li class="page-footer__social-item">
-            <a class="page-footer__social-link" href="#" aria-label="Твиттер">
+            <a class="page-footer__social-link" href="#" aria-label="Твиттер" tabindex="24">
               <svg class="page-footer__social-tw page-footer__social-icon" x="0px" y="0px" width="18px" height="15px">
                 <use xlink:href="#icon-twitter"></use>
               </svg>
             </a>
           </li>
           <li class="page-footer__social-item">
-            <a class="page-footer__social-link" href="#" aria-label="Фейсбук">
+            <a class="page-footer__social-link" href="#" aria-label="Фейсбук" tabindex="25">
               <svg class="page-footer__social-fb page-footer__social-icon" x="0px" y="0px" width="9px" height="19px">
                 <use xlink:href="#icon-facebook"></use>
               </svg>
             </a>
           </li>
           <li class="page-footer__social-item">
-            <a class="page-footer__social-link" href="#" aria-label="Ютуб">
+            <a class="page-footer__social-link" href="#" aria-label="Ютуб" tabindex="26">
               <svg class="page-footer__social-youtube page-footer__social-icon" x="0px" y="0px" width="15px" height="14px">
                 <use xlink:href="#icon-youtube"></use>
               </svg>
             </a>
           </li>
         </ul>
-        <a class="page-footer__developer page-footer__developer--form">
+        <a class="page-footer__developer page-footer__developer--form" href="https://htmlacademy.ru/intensive/adaptive" tabindex="27">
           <span class="page-footer__developer-text">Разработано</span>
           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="27px" height="34px">
             <use xlink:href="#htmlacademy"></use>
           </svg>
         </a>
     </footer>
-    <div class="modal-error">
+    <div class="modal-error visually-hidden">
       <h2 class="modal-error__header">Что-то пошло не так!</h2>
       <p class="modal-error__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       <div class="modal-error__block-button">
         <button class="modal-error__button">Oк</button>
       </div>
     </div>
-    <div class="modal-success">
+    <div class="modal-success visually-hidden">
       <h2 class="modal-success__header">Ваша заявка отправлена</h2>
       <p class="modal-success__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
       <div class="modal-success__block-button">

@@ -14,7 +14,7 @@
       <div class="page-header__controls">
         <div class="page-header__wrapper wrapper">
           <div class="page-header__head">
-            <a class="page-header__logo" href="#">
+            <a class="page-header__logo" href="#" tabindex="1">
                 <svg class="page-header__logo-mobile" width="74.426" height="22.859">
                   <use xlink:href="#logo-pink-white-mobile"></use>
                 </svg>
@@ -25,7 +25,7 @@
                   <use xlink:href="#logo-pink-white-desktop"></use>
                 </svg>
             </a>
-            <button class="main-nav__toggle visually-hidden" type="button" value="открыть меню">
+            <button class="main-nav__toggle visually-hidden" type="button" value="открыть меню" tabindex="2">
               <svg class="main-nav__toggle-burger visually-hidden" x="0px" y="0px" width="49.945px" height="24.007px">
                 <use xlink:href="#icon-menu-burger"></use>
               </svg>
@@ -37,16 +37,16 @@
           <nav class="main-nav">
               <ul class="main-nav__list site-list">
                 <li class="site-list__item site-list__item--active">
-                  <a class="site-list__item-link" href="index.html">Главная</a>
+                  <a class="site-list__item-link" href="index.html" tabindex="3">Главная</a>
                 </li>
                 <li class="site-list__item">
-                  <a class="site-list__item-link" href="photo.html">Фотографии</a>
+                  <a class="site-list__item-link" href="photo.html" tabindex="4">Фотографии</a>
                 </li>
                 <li class="site-list__item">
-                  <a class="site-list__item-link" href="form.html">Конкурс</a>
+                  <a class="site-list__item-link" href="form.html" tabindex="5">Конкурс</a>
                 </li>
                 <li class="site-list__item">
-                  <a class="site-list__item-link site-list__item-academy" href="https://htmlacademy.ru/">HTML Academy</a>
+                  <a class="site-list__item-link site-list__item-academy" href="https://htmlacademy.ru/intensive/adaptive" tabindex="6">HTML Academy</a>
                 </li>
               </ul>
           </nav>
@@ -57,20 +57,20 @@
           <h2 class="visually-hidden">Загрузка приложения</h2>
           <div class="download-application__content">
             <p class="download-application__slogan">Взгляните на жизнь иначе!</p>
-            <a class="download-application__button" href="https://apps.apple.com/store">Скачать приложение</a>
+            <a class="download-application__button" href="https://apps.apple.com/store" tabindex="7">Скачать приложение</a>
             <ul class="download-application__list">
               <li class="download-application__list-item">
-                <a class="download-application__list-link" href="https://apps.apple.com/store" aria-label="Приложение для айос">
+                <a class="download-application__list-link" href="https://apps.apple.com/store" aria-label="Приложение для айос" tabindex="8">
                   <img class="download-application__list-image" src="img/logo-apple.svg" width="47" height="56" alt="Иконка айос">
                 </a>
               </li>
               <li class="download-application__list-item">
-                <a class="download-application__list-link" href="https://play.google.com/store" aria-label="Приложение для андроид">
+                <a class="download-application__list-link" href="https://play.google.com/store" aria-label="Приложение для андроид" tabindex="9">
                   <img class="download-application__list-image" src="img/logo-android.svg" width="43" height="47" alt="Иконка андроид">
                 </a>
               </li>
               <li class="download-application__list-item">
-                <a class="download-application__list-link" href="https://www.microsoft.com/ru-RU/store/apps" aria-label="Приложение для виндовс">
+                <a class="download-application__list-link" href="https://www.microsoft.com/ru-RU/store/apps" aria-label="Приложение для виндовс" tabindex="10">
                   <img class="download-application__list-image" src="img/logo-microsoft.svg" width="44" height="41" alt="Иконка виндовс">
                 </a>
               </li>
@@ -120,7 +120,7 @@
             <h2 class="news__head">Эффект на&nbsp;24&nbsp;часа!</h2>
             <p class="news__content">Британские ученые провели исследования и&nbsp;доказали,
             что&nbsp;положительный эффект от&nbsp;использования приложения длится целые&nbsp;сутки!</p>
-            <a class="news__link" href="#">Узнать больше об исследовании</a>
+            <a class="news__link" href="#" tabindex="11">Узнать больше об исследовании</a>
           </div>
         </div>
       </section>
@@ -131,9 +131,9 @@
           <input class="feedback__slider-input feedback__slider-input--slide2" type="radio" id="feedback__slider-slide2" name="feedback__toggle">
           <input class="feedback__slider-input feedback__slider-input--slide3" type="radio" id="feedback__slider-slide3" name="feedback__toggle">
           <div class="feedback__slider-labels">
-            <label class="feedback__slider-label feedback__slider-label--slide1" for="feedback__slider-slide1" aria-label="первый отзыв"></label>
-            <label class="feedback__slider-label feedback__slider-label--slide2" for="feedback__slider-slide2"  aria-label="второй отзыв"></label>
-            <label class="feedback__slider-label feedback__slider-label--slide3" for="feedback__slider-slide3"  aria-label="третий отзыв"></label>
+            <label class="feedback__slider-label feedback__slider-label--slide1" for="feedback__slider-slide1" aria-label="первый отзыв" tabindex="12"></label>
+            <label class="feedback__slider-label feedback__slider-label--slide2" for="feedback__slider-slide2"  aria-label="второй отзыв" tabindex="13"></label>
+            <label class="feedback__slider-label feedback__slider-label--slide3" for="feedback__slider-slide3"  aria-label="третий отзыв" tabindex="14"></label>
           </div>
           <svg class="feedback__quotes visually-hidden" x="0px" y="0px" width="79px" height="63px">
             <use xlink:href="#icon-quotes"></use>
@@ -170,9 +170,9 @@
           <input class="tariff__slider-input tariff__slider-input--slide2" type="radio" id="tariff__slider-slide2" name="tariff__toggle" checked>
           <input class="tariff__slider-input tariff__slider-input--slide3" type="radio" id="tariff__slider-slide3" name="tariff__toggle">
           <div class="tariff__slider-labels">
-            <label class="tariff__slider-label tariff__slider-label--slide1" for="tariff__slider-slide1" aria-label="первый тариф"></label>
-            <label class="tariff__slider-label tariff__slider-label--slide2" for="tariff__slider-slide2"  aria-label="второй тариф"></label>
-            <label class="tariff__slider-label tariff__slider-label--slide3" for="tariff__slider-slide3"  aria-label="третий тариф"></label>
+            <label class="tariff__slider-label tariff__slider-label--slide1" for="tariff__slider-slide1" aria-label="первый тариф" tabindex="15"></label>
+            <label class="tariff__slider-label tariff__slider-label--slide2" for="tariff__slider-slide2"  aria-label="второй тариф" tabindex="16"></label>
+            <label class="tariff__slider-label tariff__slider-label--slide3" for="tariff__slider-slide3"  aria-label="третий тариф" tabindex="17"></label>
           </div>
           <table class="tariff__table">
             <tr class="tariff__table-row">
@@ -263,11 +263,11 @@
             <ul class="contacts__list">
               <li class="contacts__list-item contacts__tel">
                 <b class="contacts__tel-slogan contacts__head">Звоните:</b>
-                <a class="contacts__tel-link contacts__description" href="tel:+78125556666">&nbsp;+7&nbsp;(812)&nbsp;555-66-66</a>
+                <a class="contacts__tel-link contacts__description" href="tel:+78125556666" tabindex="18">&nbsp;+7&nbsp;(812)&nbsp;555-66-66</a>
               </li>
               <li class="contacts__list-item contacts__mail">
                 <b class="contacts__mail-slogan contacts__head">Пишите:</b>
-                <a class="contacts__mail-link contacts__description" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                <a class="contacts__mail-link contacts__description" href="mailto:mail@htmlacademy.ru" tabindex="19">mail@htmlacademy.ru</a>
               </li>
               <li class="contacts__list-item contacts__address">
                 <b class="contacts__address-slogan contacts__head">Приезжайте в гости:</b>
@@ -281,7 +281,7 @@
       </section>
     </main>
     <footer class="page-footer">
-        <a class="page-footer__logo">
+        <a class="page-footer__logo" href="#" tabindex="20">
           <svg class="page-footer__logo-image page-footer__logo--mobile" x="0px" y="0px" width="145px" height="40px">
               <use class="page-footer__logo-use" xlink:href="#logo-pink-blue-mobile"></use>
           </svg>
@@ -291,33 +291,37 @@
         </a>
         <ul class="page-footer__social-list">
           <li class="page-footer__social-item">
-            <a class="page-footer__social-link" href="#" aria-label="Твиттер">
+            <a class="page-footer__social-link" href="#" aria-label="Твиттер" tabindex="21">
               <svg class="page-footer__social-tw page-footer__social-icon" x="0px" y="0px" width="18px" height="15px">
                 <use xlink:href="#icon-twitter"></use>
               </svg>
             </a>
           </li>
           <li class="page-footer__social-item">
-            <a class="page-footer__social-link" href="#" aria-label="Фейсбук">
+            <a class="page-footer__social-link" href="#" aria-label="Фейсбук" tabindex="22">
               <svg class="page-footer__social-fb page-footer__social-icon" x="0px" y="0px" width="9px" height="19px">
                 <use xlink:href="#icon-facebook"></use>
               </svg>
             </a>
           </li>
           <li class="page-footer__social-item">
-            <a class="page-footer__social-link" href="#" aria-label="Ютуб">
+            <a class="page-footer__social-link" href="#" aria-label="Ютуб" tabindex="23">
               <svg class="page-footer__social-youtube page-footer__social-icon" x="0px" y="0px" width="15px" height="14px">
                 <use xlink:href="#icon-youtube"></use>
               </svg>
             </a>
           </li>
         </ul>
-        <a class="page-footer__developer">
+        <a class="page-footer__developer" href="https://htmlacademy.ru/intensive/adaptive" tabindex="24">
           <span class="page-footer__developer-text">Разработано</span>
           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="27px" height="34px">
             <use xlink:href="#htmlacademy"></use>
           </svg>
         </a>
     </footer>
+    <script>
+      document.createElement("picture");
+        svg4everybody();
+    </script>
   </body>
 </html>
