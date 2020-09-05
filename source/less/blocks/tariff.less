@@ -1,5 +1,5 @@
 .tariff {
-  min-height: 528px;
+  min-height: 511px;
   position: relative;
   background-color: #f2f2f2;
 }
@@ -23,7 +23,7 @@
 
 .tariff__table {
   width: auto;
-  margin-top: 77px;
+  margin-top: 130px;
   position: relative;
   top: 0;
   left: 0;
@@ -156,7 +156,7 @@
 
 .tariff__slider-labels {
   position: absolute;
-  bottom: 40px;
+  bottom: 43px;
   left: 50%;
   margin-left: -31px;
 }
@@ -188,18 +188,19 @@
 
 @media (min-width: @tablet-width) {
   .tariff {
-    min-height: 410px;
+    margin-top: -45px;
+    min-height: 440px;
     position: relative;
     background-color: #f2f2f2;
   }
 
   .tariff::before {
-    height: 120px;
+    height: 100px;
   }
 
   .tariff__table {
     position: static;
-    margin-top: 49px;
+    margin-top: 150px;
     margin-left: 20px;
     margin-right: 20px;
   }
@@ -300,18 +301,22 @@
 
 @media (min-width: @desktop-width) {
   .tariff {
+    min-height: 420px;
+    margin-top: -30px;
     padding-bottom: 100px;
   }
 
   .tariff::before {
-    height: 240px;
+    margin-top: 0;
+    height: 200px;
     min-width: 100%;
+    background-size: contain;
   }
 
   .tariff__table {
     position: static;
     margin: 0 auto;
-    margin-top: 62px;
+    margin-top: 150px;
   }
 
   .tariff__table-head {

@@ -88,7 +88,7 @@
   display: block;
   content: "";
   min-width: 100%;
-  height: 158px;
+  min-height: 158px;
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg version='1.0' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='595.28px' height='61.905px' viewBox='0 0 595.28 61.905' enable-background='new 0 0 595.28 61.905' xml:space='preserve'%3e%3cpolygon fill='%23ffffff' points='297.64,61.905 0,0 595.28,0 '/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -203,13 +203,15 @@
   .contacts__map {
     overflow: hidden;
     width: 100%;
-    margin-top: -95px;
-    height: 512px;
+    margin-top: -105px;
+    height: 520px;
   }
 
   .contacts__map::before {
     top: 0;
+    min-height: 300px;
     min-width: 100%;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='1200' height='123' viewBox='0 0 1200 123' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M599.5 123L-120 0H1319L599.5 123Z' fill='white'/%3e%3c/svg%3e");
     background-position: 0 0;
     background-size: contain;
   }
