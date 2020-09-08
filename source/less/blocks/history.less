@@ -1,5 +1,5 @@
 .history__slogan {
-  width: 281px;
+  width: 283px;
   margin: 0 auto;
   margin-top: 45px;
   font-size: 14px;
@@ -65,8 +65,12 @@
   margin-bottom: 18px;
 }
 
+.history__persona-item:nth-of-type(2) {
+  margin-bottom: 16px;
+}
+
 .history__persona-item:last-of-type {
-  margin-bottom: 44px;
+  margin-bottom: 0;
 }
 
 .history__persona-label,
@@ -101,36 +105,27 @@
   margin-bottom: 28px;
 }
 
-.history__email {
-  margin-bottom: 44px;
-}
-
 .history__form-progress {
   margin: 0;
   padding: 0;
+  margin-top: -30px;
   background-color: #f2f2f2;
 }
 
 .history__form-legend {
-  width: 100%;
+  margin: 0 auto;
   padding-top: 37px;
   margin-bottom: 3px;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   text-align: center;
-  background-color: #f2f2f2;
   color: #d22856;
 }
 
 .history__form-span {
   display: block;
   margin: 0 auto;
-}
-
-.history__form-check {
-  margin-left: 30px;
-  margin-right: 30px;
 }
 
 .history__progress {
@@ -210,6 +205,7 @@
 }
 
 .history__form-application {
+  margin-top: -30px;
   background-color: #f2f2f2;
 }
 
@@ -258,7 +254,7 @@
 }
 
 .history__form-contact {
-  margin-top: -2px;
+  margin-top: -5px;
 }
 
 .net__item-label::before {
@@ -374,6 +370,26 @@
   margin-bottom: 38px;
 }
 
+.history__application-head {
+  width: 178px;
+}
+
+.history__form-button {
+  margin-top: 3px;
+}
+
+.history__form-check {
+  width: 228px;
+}
+
+.history__form-legend--check {
+  padding-top: 110px;
+}
+
+.history__form-legend--application {
+  padding-top: 110px;
+}
+
 @media (min-width: @tablet-width) {
   .history-wrapper {
     margin: 0 auto;
@@ -396,15 +412,12 @@
     width: 616px;
   }
 
-  .history__form-fieldset:not(:first-of-type) {
-    border: 2px solid #e5e5e5;
-    background-color: #ffffff;
+  .history__form-legend {
+    padding-top: 0;
   }
 
-  .history__form-legend {
-    display: block;
-    width: auto;
-    padding-top: 0;
+  .history__form-fieldset:not(:first-of-type) {
+    border: 2px solid #e5e5e5;
     background-color: #ffffff;
   }
 
@@ -419,8 +432,6 @@
   }
 
   .history__form-check {
-    margin-left: 0;
-    margin-right: 0;
     width: 436px;
   }
 
@@ -607,6 +618,18 @@
   .history__name-input {
     width: 565px;
   }
+
+  .history__patronymic {
+    margin-top: 52px;
+  }
+
+  .history__form-legend--contact {
+    display: block;
+  }
+
+  .history__button-submit {
+    margin-top: -2px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -781,7 +804,7 @@
   }
 
   .history__button-submit {
-    margin-top: -1px;
+    margin-top: -3px;
     margin-left: 21px;
     height: 63px;
   }
