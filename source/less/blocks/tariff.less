@@ -1,14 +1,17 @@
 .tariff {
-  min-height: 528px;
+  min-height: 511px;
   position: relative;
   background-color: #f2f2f2;
 }
 
 .tariff::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
   display: block;
-  margin-top: -20px;
   content: "";
-  height: 70px;
+  height: 50px;
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg version='1.0' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='1200px' height='94.074px' viewBox='0 0 1200 94.074' enable-background='new 0 0 1200 94.074' xml:space='preserve'%3e%3cpolygon fill='%23ffffff' points='1200,0 0,0 0,94.074 '/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-size: cover;
@@ -20,22 +23,22 @@
 
 .tariff__table {
   width: auto;
-  margin-top: 77px;
+  margin-top: 130px;
   position: relative;
   top: 0;
   left: 0;
-  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 .tariff__table-head {
   box-sizing: border-box;
   padding: 14px 96px 29px 92px;
   width: 276px;
-  height:94px;
+  height: 94px;
   text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
-  border: 2px solid #f2f2f2;
+  border: 1px solid #f2f2f2;
   background-color: #283645;
   color: #ffffff;
 }
@@ -46,7 +49,7 @@
 
 .tariff__table-standart::before {
   position: absolute;
-  top: 0px;
+  top: 0;
   left: -2px;
   display: block;
   content: "";
@@ -90,7 +93,7 @@
   box-sizing: border-box;
   padding-left: 18px;
   height: 60px;
-  border: 2px solid #e5e5e5;
+  border: 1px solid #e5e5e5;
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
@@ -153,7 +156,7 @@
 
 .tariff__slider-labels {
   position: absolute;
-  bottom: 40px;
+  bottom: 43px;
   left: 50%;
   margin-left: -31px;
 }
@@ -185,36 +188,41 @@
 
 @media (min-width: @tablet-width) {
   .tariff {
-    min-height: 410px;
+    margin-top: -45px;
+    min-height: 440px;
     position: relative;
     background-color: #f2f2f2;
   }
 
   .tariff::before {
-    margin-top: -16px;
-    height: 70px;
+    height: 100px;
   }
 
   .tariff__table {
     position: static;
-    margin-top: 49px;
+    margin-top: 150px;
     margin-left: 20px;
     margin-right: 20px;
   }
+
   .tariff__table-head1,
   .tariff__table-cell1 {
     display: table-cell;
   }
+
   .tariff__table-head1 {
     visibility: hidden;
     background-color: transparent;
   }
+
   .tariff__cell-span {
     display: none;
   }
+
   .tariff__slider-labels {
     display: none;
   }
+
   .tariff__table-head {
     padding: 0;
     padding-top: 15px;
@@ -226,18 +234,20 @@
   }
 
   .tariff__table-head:nth-of-type(2) {
-      border-left: 0;
-      border-top-left-radius: 5px;
+    padding-left: 16px;
+    padding-right: 13px;
+    border-left: 0;
+    border-top-left-radius: 5px;
   }
 
   .tariff__table-head:nth-of-type(3) {
-      padding-left: 12px;
+    padding-left: 12px;
   }
 
   .tariff__table-head:last-of-type {
-      border-right: 0;
-      border-top-right-radius: 5px;
-      padding-left: 10px;
+    border-right: 0;
+    border-top-right-radius: 5px;
+    padding-left: 10px;
   }
 
   .tariff__table-cell {
@@ -259,8 +269,8 @@
   }
 
   .tariff__table-standart::before {
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     width: 61px;
     height: 61px;
     background-image: url("../img/bg-hit-tablet.svg");
@@ -270,13 +280,12 @@
   .tariff__table-standart::after {
     position: absolute;
     top: 6px;
-    left: 0px;
+    left: 0;
     display: block;
     content: "ХИТ";
     width: 61px;
     height: 61px;
     font-size: 14px;
-    font-weight: lighter;
     line-height: 30px;
     color: #ffffff;
     font-weight: normal;
@@ -294,18 +303,22 @@
 
 @media (min-width: @desktop-width) {
   .tariff {
+    min-height: 420px;
+    margin-top: -30px;
     padding-bottom: 100px;
   }
 
   .tariff::before {
-    margin-top: -19px;
-    height: 90px;
+    margin-top: 0;
+    height: 200px;
+    min-width: 100%;
+    background-size: contain;
   }
 
   .tariff__table {
     position: static;
     margin: 0 auto;
-    margin-top: 62px;
+    margin-top: 150px;
   }
 
   .tariff__table-head {
