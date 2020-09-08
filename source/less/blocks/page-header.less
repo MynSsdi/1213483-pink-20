@@ -37,15 +37,15 @@
   height: 23px;
 }
 
-.page-header use {
+.page-header .page-header__logo-mobile {
   fill: #ffffff;
 }
 
-.page-header__logo:hover use {
+.page-header__logo:hover .page-header__logo-mobile {
   fill: #d22856;
 }
 
-.page-header__logo:active use {
+.page-header__logo:active .page-header__logo-mobile {
   fill: #ffffff;
   opacity: 0.3;
 }
@@ -69,6 +69,10 @@
 
 .main-nav__toggle-cross {
   margin-right: -25px;
+}
+
+.main-nav__toggle {
+  fill: #ffffff;
 }
 
 .main-nav__toggle:hover use {
@@ -134,10 +138,6 @@
   min-height: 235px;
 }
 
-.page-svg .page-header__logo-points {
-  fill: #d22856;
-}
-
 @media (min-width: @tablet-width) {
   .page-header {
     min-height: 729px;
@@ -170,18 +170,21 @@
     margin-top: -15px;
   }
 
-  .page-header__logo:hover .page-header__logo-tablet path,
-  .page-header__logo:hover path {
+  .site-list__item-academy {
+    min-height: 65px;
+  }
+
+  .page-header .page-header__logo-tablet {
+    fill: #ffffff;
+  }
+
+  .page-header__logo:hover .page-header__logo-tablet {
     fill: #d22856;
   }
 
-  .page-header__logo:hover:active .page-header__logo-tablet path {
+  .page-header__logo:active .page-header__logo-tablet {
     fill: #ffffff;
     opacity: 0.3;
-  }
-
-  .site-list__item-academy {
-    min-height: 65px;
   }
 }
 
@@ -271,6 +274,23 @@
 
   .site-list__item-link:active {
     color: rgba(255, 255, 255, 0.3);
+  }
+
+  .page-header .page-header__logo-desktop {
+    fill: #ffffff;
+  }
+
+  .page-header__logo:hover .page-header__logo-desktop {
+    fill: #d22856;
+  }
+
+  .page-header__logo:active .page-header__logo-desktop {
+    fill: #ffffff;
+    opacity: 0.3;
+  }
+
+  .page-svg .page-header__logo-points {
+    fill: #d22856;
   }
 }
 

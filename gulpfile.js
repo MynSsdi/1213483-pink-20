@@ -53,7 +53,7 @@ const images = () => {
     .pipe(imagemin([
         imagemin.optipng({optimizationLevel: 3}),
         imagemin.mozjpeg({progressive: true}),
-        imagemin.svgo()
+        imagemin.svgo({removeViewBox: false})
     ]))
     .pipe(gulp.dest("build/img"));
 }
