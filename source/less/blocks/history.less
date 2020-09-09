@@ -14,39 +14,10 @@
   flex-direction: column;
 }
 
-.input-form {
-  outline: 0;
-  height: 63px;
-  width: 280px;
-  font-size: 18px;
-  line-height: 30px;
-}
-
-.input-form:hover {
-  border-color: #283645;
-}
-
-.input-form:focus {
-  border-color: #d22856;
-}
-
-.label-form:hover::before {
-  border-color: #283645;
-}
-
-.label-form:active::before {
-  border-color: #d22856;
-}
-
 .history__form-fieldset {
   border: 0;
   margin: 0;
   padding: 0;
-}
-
-.history-wrapper {
-  width: 320px;
-  margin: 0 auto;
 }
 
 .history__list {
@@ -55,10 +26,6 @@
   margin-bottom: 0;
   padding: 0;
   list-style: none;
-}
-
-.label-form {
-  margin-left: 22px;
 }
 
 .history__persona-item {
@@ -257,20 +224,6 @@
   margin-top: -5px;
 }
 
-.net__item-label::before {
-  margin-right: 11px;
-  margin-left: 1px;
-  display: inline-block;
-  content: "";
-  width: 25px;
-  height: 25px;
-  vertical-align: middle;
-  background-image: url("../img/radio-off.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  opacity: 0.4;
-}
-
 .history__emotion-legend {
   background-color: #ffffff;
   margin-bottom: 17px;
@@ -287,7 +240,7 @@
   width: 280px;
   height: 201px;
   border: 2px solid #e5e5e5;
-  font-family: "Open Sans", sans-serif;
+  font-family: @font-main;
   font-size: 18px;
   line-height: 30px;
   letter-spacing: 0.5px;
@@ -391,11 +344,6 @@
 }
 
 @media (min-width: @tablet-width) {
-  .history-wrapper {
-    margin: 0 auto;
-    width: 616px;
-  }
-
   .history__slogan {
     width: 500px;
     margin: 92px auto 71px auto;
@@ -425,10 +373,6 @@
     margin: 0;
     padding: 0;
     list-style: none;
-  }
-
-  .label-form {
-    margin: 0;
   }
 
   .history__form-check {
@@ -633,10 +577,6 @@
   .history__slogan {
     width: 752px;
     margin: 94px auto 83px auto;
-  }
-
-  .history-wrapper {
-    width: 100%;
   }
 
   .history__form {

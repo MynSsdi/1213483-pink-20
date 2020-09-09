@@ -15,22 +15,23 @@
         <div class="page-header__wrapper wrapper">
           <div class="page-header__head">
             <a class="page-header__logo" href="index.html" tabindex="1">
-              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
-                <svg class="page-header__logo-mobile" width="74.426" height="22.859">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146px" height="40px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
+                <svg class="page-header__logo-mobile" width="74px" height="22px">
                   <use href="#logo-pink-white-mobile"></use>
                 </svg>
-                <svg class="page-header__logo-tablet visually-hidden" width="146.3px" height="40.375px">
+                <svg class="page-header__logo-tablet visually-hidden" width="146px" height="40px">
                   <use href="#logo-pink-white-tablet"></use>
                 </svg>
-                <svg class="page-header__logo-desktop visually-hidden" width="146.3px" height="40.375px">
+                <svg class="page-header__logo-desktop visually-hidden" width="146px" height="40px">
                   <use href="#logo-pink-white-desktop"></use>
                 </svg>
             </a>
-            <button class="main-nav__toggle visually-hidden" type="button" value="открыть меню" tabindex="2">
-              <svg class="main-nav__toggle-burger visually-hidden" x="0px" y="0px" width="49.945px" height="24.007px">
+            <!-- .main-nav-btn__toggle критерий Б5-->
+            <button class="main-nav-btn__toggle visually-hidden" type="button" value="открыть меню" tabindex="2">
+              <svg class="main-nav-btn__toggle-burger visually-hidden" x="0px" y="0px" width="50px" height="24px">
                 <use href="#icon-menu-burger"></use>
               </svg>
-              <svg class="main-nav__toggle-cross" x="0px" y="0px" width="23.867px" height="23.867px">
+              <svg class="main-nav-btn__toggle-cross" x="0px" y="0px" width="24px" height="24px">
                 <use href="#icon-menu-cross"></use>
               </svg>
             </button>
@@ -63,16 +64,16 @@
           <h2 class="visually-hidden">Список фотографий</h2>
           <p class="photo__slogan">Взгляните&nbsp;на&nbsp;фотографии,&nbsp;которые выкладывают пользователи! Видите,&nbsp;как&nbsp;не&nbsp;хватает&nbsp;ваших?</p>
           <ul class="photo__list">
-            <li class="photo__item photo__item1">
+            <li class="photo__item photo__item--first">
               <span class="photo__item-header">Панорама дня</span>
               <a class="photo__item-link photo__item-link--active" href="#" tabindex="7">
-                <picture class="photo__source1">
+                <picture class="photo__item-picture">
                   <source type="image/webp" srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x" media="(min-width: 1200px)">
                   <source type="image/webp" srcset="img/panorama-tablet@1x.webp 1x, img/panorama-tablet@2x.webp 2x" media="(min-width: 660px) and (max-width: 1200px)">
                   <source type="image/webp" srcset="img/panorama-mobile@1x.webp, img/panorama-mobile@2x.webp 2x">
                   <source srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x" media="(min-width: 660px) and (max-width: 1200px)">
                   <source srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x" media="(min-width: 1200px)">
-                  <img class="photo__item-image photo__item-image1" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама дня">
+                  <img class="photo__item-image photo__item-image--first" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама дня">
                 </picture>
               </a>
               <div class="photo__item-content photo__item-content--anna">
@@ -81,7 +82,7 @@
                 <p class="photo__item-description photo__item-description--panorama">
                   Прыгать или нет? Напишите в комментарии свой совет и смотрите&nbsp;прямую трансляцию в перископе, задавайте свои вопросы!
                 </p>
-                <button class="photo__item-like photo__item-like1" tabindex="8">Нравится: 215</button>
+                <button class="photo__item-like photo__item-like--first" tabindex="8">Нравится: 215</button>
               </div>
             </li>
             <li class="photo__item">
@@ -265,10 +266,10 @@
     </main>
     <footer class="page-footer page-footer__desktop page-footer--photo">
       <a class="page-footer__logo" href="index.html" tabindex="29">
-        <svg class="page-footer__logo-image page-footer__logo--mobile" x="0px" y="0px" width="145px" height="40px">
+        <svg class="page-footer__logo-image page-footer__logo-image--mobile" x="0px" y="0px" width="145px" height="40px">
             <use class="page-footer__logo-use" href="#logo-pink-blue-mobile"></use>
         </svg>
-        <svg class="page-footer__logo-image page-footer__logo--desktop visually-hidden" x="0px" y="0px" width="145px" height="40px">
+        <svg class="page-footer__logo-image page-footer__logo-image--desktop visually-hidden" x="0px" y="0px" width="145px" height="40px">
             <use class="page-footer__logo-use" href="#logo-pink-blue-desktop"></use>
         </svg>
       </a>

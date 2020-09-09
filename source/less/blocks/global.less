@@ -2,6 +2,7 @@
 @desktop-width: 1200px;
 @retina-dpi: 144dpi;
 @retina-dppx: 1.5dppx;
+@font-main: "Open Sans", "Arial", sans-serif;
 
 body {
   margin: 0;
@@ -11,35 +12,5 @@ body {
   min-width: 320px;
   min-height: 100%;
   background-color: #ffffff;
-  font-family: "Open Sans", sans-serif;
-}
-
-.page-body svg path {
-  fill: inherit;
-}
-
-.wrapper {
-  width: 320px;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-.visually-hidden {
-  display: none;
-}
-
-.button {
-  border: 0;
-}
-
-@media (min-width: @tablet-width) {
-  .wrapper {
-    width: 620px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .wrapper {
-    width: 940px;
-  }
+  font-family: @font-main;
 }

@@ -43,11 +43,11 @@
   color: #ffffff;
 }
 
-.tariff__table-standart {
+.tariff__table-head--standart {
   position: relative;
 }
 
-.tariff__table-standart::before {
+.tariff__table-head--standart::before {
   position: absolute;
   top: 0;
   left: -2px;
@@ -61,7 +61,7 @@
   background-size: 74px 74px;
 }
 
-.tariff__table-standart::after {
+.tariff__table-head--standart::after {
   position: absolute;
   top: 12px;
   left: 6px;
@@ -102,9 +102,9 @@
   color: #283645;
 }
 
-.tariff__cell-filter3,
-.tariff__cell-smile3,
-.tariff__cell-comment3 {
+.tariff__cell--third-filter,
+.tariff__cell--third-smile,
+.tariff__cell--third-comment {
   padding-left: 20px;
 }
 
@@ -114,16 +114,16 @@
   right: 18px;
 }
 
-.tariff__table-cell1,
-.tariff__table-head1 {
+.tariff__table-cell--first,
+.tariff__table-head--first {
   display: none;
 }
 
-.tariff__icon-yes {
+.tariff__icon--yes {
   fill: #3dc644;
 }
 
-.tariff__icon-no {
+.tariff__icon--no {
   fill: #f25b26;
 }
 
@@ -161,28 +161,28 @@
   margin-left: -31px;
 }
 
-.tariff__slider-input--slide1:checked ~ .tariff__slider-labels .tariff__slider-label--slide1::before,
-.tariff__slider-input--slide2:checked ~ .tariff__slider-labels .tariff__slider-label--slide2::before,
-.tariff__slider-input--slide3:checked ~ .tariff__slider-labels .tariff__slider-label--slide3::before {
+.tariff__slider-input--first-slide:checked ~ .tariff__slider-labels .tariff__slider-label--first-slide::before,
+.tariff__slider-input--second-slide:checked ~ .tariff__slider-labels .tariff__slider-label--second-slide::before,
+.tariff__slider-input--third-slide:checked ~ .tariff__slider-labels .tariff__slider-label--third-slide::before {
   border-color: #283645;
   background-color: #ffffff;
 }
 
-.tariff__slider-input--slide1:checked ~ .tariff__table {
+.tariff__slider-input--first-slide:checked ~ .tariff__table {
   left: 30px;
 }
 
-.tariff__slider-input--slide2:checked ~ .tariff__table {
+.tariff__slider-input--second-slide:checked ~ .tariff__table {
   left: -249px;
 }
 
-.tariff__slider-input--slide3:checked ~ .tariff__table {
+.tariff__slider-input--third-slide:checked ~ .tariff__table {
   left: -500px;
 }
 
-.tariff__slider-input--slide1:checked ~ .tariff__slider-list .tariff__slider-item1,
-.tariff__slider-input--slide2:checked ~ .tariff__slider-list .tariff__slider-item2,
-.tariff__slider-input--slide3:checked ~ .tariff__slider-list .tariff__slider-item3 {
+.tariff__slider-input--first-slide:checked ~ .tariff__slider-list .tariff__slider--first-item,
+.tariff__slider-input--second-slide:checked ~ .tariff__slider-list .tariff__slider--srcond-item,
+.tariff__slider-input--third-slide:checked ~ .tariff__slider-list .tariff__slider--third-item {
   display: block;
 }
 
@@ -205,12 +205,12 @@
     margin-right: 20px;
   }
 
-  .tariff__table-head1,
-  .tariff__table-cell1 {
+  .tariff__table-head--first,
+  .tariff__table-cell--first {
     display: table-cell;
   }
 
-  .tariff__table-head1 {
+  .tariff__table-head--first {
     visibility: hidden;
     background-color: transparent;
   }
@@ -260,7 +260,7 @@
     text-transform: none;
   }
 
-  .tariff__table-cell1--smile {
+  .tariff__table-cell--first-smile {
     padding-top: 5px;
   }
 
@@ -268,7 +268,7 @@
     padding-top: 8px;
   }
 
-  .tariff__table-standart::before {
+  .tariff__table-head--standart::before {
     top: 0;
     left: 0;
     width: 61px;
@@ -277,7 +277,7 @@
     background-size: 60px 60px;
   }
 
-  .tariff__table-standart::after {
+  .tariff__table-head--standart::after {
     position: absolute;
     top: 6px;
     left: 0;
@@ -364,11 +364,11 @@
     text-transform: none;
   }
 
-  .tariff__table-cell1 {
+  .tariff__table-cell--first {
     width: 234px;
   }
 
-  .tariff__table-standart::before {
+  .tariff__table-head--standart::before {
     left: 1px;
     width: 74px;
     height: 74px;
@@ -376,7 +376,7 @@
     background-size: 74px 74px;
   }
 
-  .tariff__table-standart::after {
+  .tariff__table-head--standart::after {
     top: 10px;
     left: 5px;
     content: "ХИТ";

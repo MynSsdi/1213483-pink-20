@@ -1,0 +1,35 @@
+.main-nav-btn__toggle {
+  display: none;
+  border: 0;
+  background-color: rgba(0, 0, 0, 0);
+  width: 49px;
+  height: 25px;
+  overflow: hidden;
+  fill: #ffffff;
+}
+
+.main-nav-btn__toggle:active .main-nav-btn__toggle-burger {
+  display: none;
+}
+
+.main-nav-btn__toggle:active .main-nav-btn__toggle-cross {
+  display: inline-block;
+}
+
+.main-nav-btn__toggle-cross {
+  margin-right: -25px;
+}
+
+.main-nav-btn__toggle:hover use {
+  fill: #d22856;
+}
+
+.main-nav-btn__toggle:active use {
+  opacity: 0.3;
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav-btn__toggle {
+    display: none;
+  }
+}

@@ -102,21 +102,17 @@
   opacity: 0.3;
 }
 
-.page-footer .page-footer__logo--mobile {
+.page-footer .page-footer__logo-image--mobile {
   fill: #283645;
 }
 
-.page-footer__logo:hover .page-footer__logo--mobile {
+.page-footer__logo:hover .page-footer__logo-image--mobile {
   fill: #d22856;
 }
 
-.page-footer__logo:active .page-footer__logo--mobile {
+.page-footer__logo:active .page-footer__logo-image--mobile {
   fill: #283645;
   opacity: 0.3;
-}
-
-.page-svg .glasses {
-  fill: #d22856;
 }
 
 @media (min-width: @tablet-width) {
@@ -173,11 +169,11 @@
     fill: #283645;
   }
 
-  .page-footer__logo--mobile {
+  .page-footer__logo-image--mobile {
     display: none;
   }
 
-  .page-footer__logo--desktop {
+  .page-footer__logo-image--desktop {
     display: block;
   }
 
@@ -227,26 +223,22 @@
     opacity: 0.3;
   }
 
-  .page-footer .page-footer__logo--desktop .page-footer__logo-use {
+  .page-footer .page-footer__logo-image--desktop .page-footer__logo-use {
     fill: #283645;
   }
 
-  .page-svg .glasses path {
+  .page-footer .page-footer__logo-image--desktop:hover .page-footer__logo-use {
     fill: #d22856;
   }
 
-  .page-footer .page-footer__logo--desktop:hover .page-footer__logo-use {
-    fill: #d22856;
-  }
-
-  .page-footer .page-footer__logo--desktop:active .page-footer__logo-use {
+  .page-footer .page-footer__logo-image--desktop:active .page-footer__logo-use {
     fill: #283645;
     opacity: 0.3;
   }
 }
 
 // photo.html
-.page-footer__logo--mobile {
+.page-footer__logo-image--mobile {
   margin-top: 50px;
   margin-bottom: 35px;
 }
@@ -257,7 +249,7 @@
 
 
 @media (min-width: @tablet-width) {
-  .page-footer__logo--mobile {
+  .page-footer__logo-image--mobile {
     margin-top: 40px;
   }
 
@@ -274,26 +266,26 @@
 
 // form.html
 
-.page-footer__developer--form {
+.page-footer__developer-form {
   margin-top: 36px;
 }
 
-.page-footer--form {
+.page-footer-form {
   margin-top: -5px;
 }
 
 @media (min-width: @tablet-width) {
-  .page-footer--form {
+  .page-footer-form {
     margin-top: 47px;
   }
 
-  .page-footer__developer--form {
+  .page-footer__developer-form {
     margin-top: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .page-footer--form {
+  .page-footer-form {
     margin-top: 34px;
   }
 }

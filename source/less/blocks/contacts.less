@@ -24,7 +24,9 @@
   margin-bottom: 25px;
 }
 
-.contacts__head {
+.contacts__address-slogan--head,
+.contacts__mail-slogan--head,
+.contacts__tel-slogan--head {
   display: block;
   margin-bottom: 5px;
   font-size: 18px;
@@ -37,7 +39,9 @@
   margin-bottom: 3px;
 }
 
-.contacts__description {
+.contacts__tel-link--description,
+.contacts__mail-link--description,
+.contacts__address-description--span {
   font-size: 24px;
   font-weight: lighter;
   color: #d22856;
@@ -47,7 +51,7 @@
   line-height: 30px;
 }
 
-.contacts__tel {
+.contacts__list-item--tel {
   text-align: center;
   padding: 0 50px;
   margin-bottom: 22px;
@@ -70,12 +74,12 @@
   text-decoration: none;
 }
 
-.contacts__mail {
+.contacts__list-item--mail {
   margin-bottom: 21px;
   padding: 0 30px;
 }
 
-.contacts__address {
+.contacts__list-item--address {
   padding: 0 50px;
 }
 
@@ -119,9 +123,9 @@
     margin-left: 10px;
   }
 
-  .contacts__tel,
-  .contacts__mail,
-  .contacts__address {
+  .contacts__list-item--tel,
+  .contacts__list-item--mail,
+  .contacts__list-item--address {
     padding: 0;
     width: 237px;
   }
@@ -130,13 +134,15 @@
     width: 240px;
   }
 
-  .contacts__description {
+  .contacts__tel-link--description,
+  .contacts__mail-link--description,
+  .contacts__address-description--span {
     display: block;
     margin-top: 8px;
     margin-left: -5px;
   }
 
-  .contacts__address {
+  .contacts__list-item--address {
     margin: 0;
     margin-left: 5px;
     align-self: flex-end;
@@ -182,7 +188,7 @@
     width: 940px;
   }
 
-  .contacts__address {
+  .contacts__list-item--address {
     margin: 0;
     padding: 0;
     align-self: stretch;
@@ -190,15 +196,17 @@
     order: 2;
   }
 
-  .contacts__description {
+  .contacts__tel-link--description,
+  .contacts__mail-link--description,
+  .contacts__address-description--span {
     margin-top: 24px;
   }
 
-  .contacts__tel {
+  .contacts__list-item--tel {
     margin-left: -20px;
   }
 
-  .contacts__mail {
+  .contacts__list-item--mail {
     order: 3;
   }
 

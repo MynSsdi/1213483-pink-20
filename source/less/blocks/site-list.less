@@ -1,0 +1,68 @@
+.site-list__item {
+  flex-basis: auto;
+  flex-grow: 1;
+}
+
+.site-list__item-link {
+  display: block;
+  min-height: 63px;
+  box-shadow: 0 1px 0 0 #000000, inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 64px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.site-list__item-link:hover {
+  color: #d22856;
+}
+
+.site-list__item-link:active {
+  opacity: 0.3;
+}
+
+@media (min-width: @tablet-width) {
+  .site-list__item-academy {
+    min-height: 65px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list__item {
+    box-sizing: border-box;
+    margin-top: 10px;
+    padding-bottom: 28px;
+    height: 18px;
+  }
+
+  .site-list__item:not(:last-of-type) {
+    margin-right: 84px;
+  }
+
+  .site-list__item--active {
+    border-bottom: 2px solid #ffffff;
+  }
+
+  .site-list__item-link {
+    min-height: 18px;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 18px;
+    text-align: left;
+    vertical-align: middle;
+    text-transform: none;
+    box-shadow: none;
+  }
+
+  .site-list__item-link:hover {
+    color: #d22856;
+  }
+
+  .site-list__item-link:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}

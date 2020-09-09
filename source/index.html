@@ -15,21 +15,22 @@
         <div class="page-header__wrapper wrapper">
           <div class="page-header__head">
             <a class="page-header__logo" href="#" tabindex="1">
-                <svg class="page-header__logo-mobile" width="74.426" height="22.859">
+                <svg class="page-header__logo-mobile" width="74" height="22">
                   <use href="#logo-pink-white-mobile"></use>
                 </svg>
-                <svg class="page-header__logo-tablet visually-hidden" width="146.3px" height="40.375px">
+                <svg class="page-header__logo-tablet visually-hidden" width="146px" height="40px">
                   <use href="#logo-pink-white-tablet"></use>
                 </svg>
-                <svg class="page-header__logo-desktop visually-hidden" width="146.3px" height="40.375px">
+                <svg class="page-header__logo-desktop visually-hidden" width="146px" height="40px">
                   <use href="#logo-pink-white-desktop"></use>
                 </svg>
             </a>
-            <button class="main-nav__toggle visually-hidden" type="button" value="открыть меню" tabindex="2">
-              <svg class="main-nav__toggle-burger visually-hidden" x="0px" y="0px" width="49.945px" height="24.007px">
+            <!-- .main-nav-btn__toggle критерий Б5-->
+            <button class="main-nav-btn__toggle visually-hidden" type="button" value="открыть меню" tabindex="2">
+              <svg class="main-nav-btn__toggle-burger visually-hidden" x="0px" y="0px" width="50px" height="24px">
                 <use xlink:href="#icon-menu-burger"></use>
               </svg>
-              <svg class="main-nav__toggle-cross" x="0px" y="0px" width="23.867px" height="23.867px">
+              <svg class="main-nav-btn__toggle-cross" x="0px" y="0px" width="24px" height="24px">
                 <use xlink:href="#icon-menu-cross"></use>
               </svg>
             </button>
@@ -91,22 +92,20 @@
           </p>
         </div>
         <div class="characteristics-application__menu">
-          <div class="characteristics-application__menu-wrapper wrapper">
-            <ul class="characteristics-application__list">
-                <li class="characteristics-application__item characteristics-application__item1">
+            <ul class="characteristics-application__list wrapper">
+                <li class="characteristics-application__item characteristics-application__item--first">
                   <b class="characteristics-application__item-title">Поднимает настроение</b>
-                  <p class="characteristics-application__item-description characteristics-application__item-description1">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+                  <p class="characteristics-application__item-description characteristics-application__item-description--first">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
                 </li>
-                <li class="characteristics-application__item characteristics-application__item2">
+                <li class="characteristics-application__item characteristics-application__item--second">
                   <b class="characteristics-application__item-title">Меняет мир вокруг</b>
-                  <p class="characteristics-application__item-description characteristics-application__item-description2">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить&nbsp;эффект</p>
+                  <p class="characteristics-application__item-description characteristics-application__item-description--second">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить&nbsp;эффект</p>
                 </li>
-                <li class="characteristics-application__item characteristics-application__item3">
+                <li class="characteristics-application__item characteristics-application__item--third">
                   <b class="characteristics-application__item-title">Заводит новых&nbsp;друзей</b>
-                  <p class="characteristics-application__item-description characteristics-application__item-description3">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+                  <p class="characteristics-application__item-description characteristics-application__item-description--third">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
                 </li>
             </ul>
-          </div>
         </div>
       </section>
       <section class="news visually-hidden">
@@ -127,13 +126,13 @@
       <section class="feedback">
         <div class="feedback__wrapper wrapper">
           <h2 class="visually-hidden">Отзывы</h2>
-          <input class="feedback__slider-input feedback__slider-input--slide1" type="radio" id="feedback__slider-slide1" name="feedback__toggle" checked>
-          <input class="feedback__slider-input feedback__slider-input--slide2" type="radio" id="feedback__slider-slide2" name="feedback__toggle">
-          <input class="feedback__slider-input feedback__slider-input--slide3" type="radio" id="feedback__slider-slide3" name="feedback__toggle">
+          <input class="feedback__slider-input feedback__slider-input--first-slide" type="radio" id="feedback__slider--first-slide" name="feedback__toggle" checked>
+          <input class="feedback__slider-input feedback__slider-input--second-slide" type="radio" id="feedback__slider--second-slide" name="feedback__toggle">
+          <input class="feedback__slider-input feedback__slider-input--third-slide" type="radio" id="feedback__slider--third-slide" name="feedback__toggle">
           <div class="feedback__slider-labels">
-            <label class="feedback__slider-label feedback__slider-label--slide1" for="feedback__slider-slide1" aria-label="первый отзыв" tabindex="12"></label>
-            <label class="feedback__slider-label feedback__slider-label--slide2" for="feedback__slider-slide2"  aria-label="второй отзыв" tabindex="13"></label>
-            <label class="feedback__slider-label feedback__slider-label--slide3" for="feedback__slider-slide3"  aria-label="третий отзыв" tabindex="14"></label>
+            <label class="feedback__slider-label feedback__slider-label--first-slide" for="feedback__slider--first-slide" aria-label="первый отзыв" tabindex="12"></label>
+            <label class="feedback__slider-label feedback__slider-label--second-slide" for="feedback__slider--second-slide"  aria-label="второй отзыв" tabindex="13"></label>
+            <label class="feedback__slider-label feedback__slider-label--third-slide" for="feedback__slider--third-slide"  aria-label="третий отзыв" tabindex="14"></label>
           </div>
           <svg class="feedback__quotes visually-hidden" x="0px" y="0px" width="79px" height="63px">
             <use xlink:href="#icon-quotes"></use>
@@ -145,17 +144,17 @@
             <use xlink:href="#icon-review-arrow-right"></use>
           </svg>
           <ul class="feedback__slider-list">
-            <li class="feedback__slider-item feedback__slider-item1">
+            <li class="feedback__slider-item feedback__slider-item--first">
               <b class="feedback__slider-header">Николай Петров</b>
               <p class="feedback__slider-signature visually-hidden">25 лет, водитель трамвая</p>
               <p class="feedback__slider-description">&#171;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!&#187;</p>
             </li>
-            <li class="feedback__slider-item feedback__slider-item2">
+            <li class="feedback__slider-item feedback__slider-item--second">
               <b class="feedback__slider-header">Василий Пупкин</b>
               <p class="feedback__slider-signature visually-hidden">25 лет, водитель трамвая</p>
               <p class="feedback__slider-description">&#171;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!&#187;</p>
             </li>
-            <li class="feedback__slider-item feedback__slider-item3">
+            <li class="feedback__slider-item feedback__slider-item--third">
               <b class="feedback__slider-header">Просто Васечкин</b>
               <p class="feedback__slider-signature visually-hidden">25 лет, водитель трамвая</p>
               <p class="feedback__slider-description">&#171;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!&#187;</p>
@@ -166,22 +165,22 @@
       <section class="tariff">
         <div class="tariff__wrapper wrapper">
           <h2 class="visually-hidden">Тарифы</h2>
-          <input class="tariff__slider-input tariff__slider-input--slide1" type="radio" id="tariff__slider-slide1" name="tariff__toggle">
-          <input class="tariff__slider-input tariff__slider-input--slide2" type="radio" id="tariff__slider-slide2" name="tariff__toggle" checked>
-          <input class="tariff__slider-input tariff__slider-input--slide3" type="radio" id="tariff__slider-slide3" name="tariff__toggle">
+          <input class="tariff__slider-input tariff__slider-input--first-slide" type="radio" id="tariff__slider--first-slide" name="tariff__toggle">
+          <input class="tariff__slider-input tariff__slider-input--second-slide" type="radio" id="tariff__slider--second-slide" name="tariff__toggle" checked>
+          <input class="tariff__slider-input tariff__slider-input--third-slide" type="radio" id="tariff__slider--third-slide" name="tariff__toggle">
           <div class="tariff__slider-labels">
-            <label class="tariff__slider-label tariff__slider-label--slide1" for="tariff__slider-slide1" aria-label="первый тариф" tabindex="15"></label>
-            <label class="tariff__slider-label tariff__slider-label--slide2" for="tariff__slider-slide2"  aria-label="второй тариф" tabindex="16"></label>
-            <label class="tariff__slider-label tariff__slider-label--slide3" for="tariff__slider-slide3"  aria-label="третий тариф" tabindex="17"></label>
+            <label class="tariff__slider-label tariff__slider-label--first-slide" for="tariff__slider--first-slide" aria-label="первый тариф" tabindex="15"></label>
+            <label class="tariff__slider-label tariff__slider-label--second-slide" for="tariff__slider--second-slide"  aria-label="второй тариф" tabindex="16"></label>
+            <label class="tariff__slider-label tariff__slider-label--third-slide" for="tariff__slider--third-slide"  aria-label="третий тариф" tabindex="17"></label>
           </div>
           <table class="tariff__table">
             <tr class="tariff__table-row">
-              <th class="tariff__table-head tariff__table-head1"></th>
+              <th class="tariff__table-head tariff__table-head--first"></th>
               <th class="tariff__table-head">
                 <b class="tariff__table-type">База</b>
                 <span class="tariff__table-price">1,99&nbsp;USD</span>
               </th>
-              <th class="tariff__table-head tariff__table-standart">
+              <th class="tariff__table-head tariff__table-head--standart">
                 <b class="tariff__table-type">Стандарт</b>
                 <span class="tariff__table-price">3,99&nbsp;USD</span>
               </th>
@@ -191,64 +190,64 @@
               </th>
             </tr>
             <tr class="tariff__table-row">
-              <td class="tariff__table-cell tariff__table-cell1 tariff__table-cell1--filter">Розовый фильтр</td>
+              <td class="tariff__table-cell tariff__table-cell--first">Розовый фильтр</td>
               <td class="tariff__table-cell">
-                <span class="tariff__cell-span tariff__cell-filter1">Розовый фильтр</span>
-                <svg class="tariff__icon tariff__icon-yes" x="0px" y="0px" width="31px" height="21px">
+                <span class="tariff__cell-span">Розовый фильтр</span>
+                <svg class="tariff__icon tariff__icon--yes" x="0px" y="0px" width="31px" height="21px">
                   <use xlink:href="#icon-yes"></use>
                 </svg>
               </td>
               <td class="tariff__table-cell">
-                <span class="tariff__cell-span tariff__cell-filter2">Розовый фильтр</span>
-                <svg class="tariff__icon tariff__icon-yes" x="0px" y="0px" width="31px" height="21px">
+                <span class="tariff__cell-span">Розовый фильтр</span>
+                <svg class="tariff__icon tariff__icon--yes" x="0px" y="0px" width="31px" height="21px">
                   <use xlink:href="#icon-yes"></use>
                 </svg>
               </td>
               <td class="tariff__table-cell">
-                <span class="tariff__cell-span tariff__cell-filter3">Розовый фильтр</span>
-                <svg class="tariff__icon tariff__icon-yes" x="0px" y="0px" width="31px" height="21px">
-                  <use xlink:href="#icon-yes"></use>
-                </svg>
-              </td>
-            </tr>
-            <tr class="tariff__table-row">
-              <td class="tariff__table-cell tariff__table-cell1 tariff__table-cell1--smile">Смайлики</td>
-              <td class="tariff__table-cell">
-                <span class="tariff__cell-span tariff__cell-smile1">Смайлики</span>
-                <svg class="tariff__icon tariff__icon-no" x="0px" y="0px" width="27px" height="26px">
-                  <use xlink:href="#icon-no"></use>
-                </svg>
-              </td>
-              <td class="tariff__table-cell">
-                <span class="tariff__cell-span tariff__cell-smile2">Смайлики</span>
-                <svg class="tariff__icon tariff__icon-yes" x="0px" y="0px" width="31px" height="21px">
-                  <use xlink:href="#icon-yes"></use>
-                </svg>
-              </td>
-              <td class="tariff__table-cell">
-                <span class="tariff__cell-span tariff__cell-smile3">Смайлики</span>
-                <svg class="tariff__icon tariff__icon-yes" x="0px" y="0px" width="31px" height="21px">
+                <span class="tariff__cell-span tariff__cell--third-filter">Розовый фильтр</span>
+                <svg class="tariff__icon tariff__icon--yes" x="0px" y="0px" width="31px" height="21px">
                   <use xlink:href="#icon-yes"></use>
                 </svg>
               </td>
             </tr>
             <tr class="tariff__table-row">
-              <td class="tariff__table-cell tariff__table-cell1 tariff__table-cell1--comment">Комментарии</td>
+              <td class="tariff__table-cell tariff__table-cell--first tariff__table-cell--first-smile">Смайлики</td>
               <td class="tariff__table-cell">
-                <span class="tariff__cell-span tariff__cell-comment1">Комментарии</span>
-                <svg class="tariff__icon tariff__icon-no" x="0px" y="0px" width="27px" height="26px">
+                <span class="tariff__cell-span tariff__cell--first-smile">Смайлики</span>
+                <svg class="tariff__icon tariff__icon--no" x="0px" y="0px" width="27px" height="26px">
                   <use xlink:href="#icon-no"></use>
                 </svg>
               </td>
               <td class="tariff__table-cell">
-                <span class="tariff__cell-span tariff__cell-comment2">Комментарии</span>
-                <svg class="tariff__icon tariff__icon-no" x="0px" y="0px" width="27px" height="26px">
+                <span class="tariff__cell-span tariff__cell--second-smile">Смайлики</span>
+                <svg class="tariff__icon tariff__icon--yes" x="0px" y="0px" width="31px" height="21px">
+                  <use xlink:href="#icon-yes"></use>
+                </svg>
+              </td>
+              <td class="tariff__table-cell">
+                <span class="tariff__cell-span tariff__cell--third-smile">Смайлики</span>
+                <svg class="tariff__icon tariff__icon--yes" x="0px" y="0px" width="31px" height="21px">
+                  <use xlink:href="#icon-yes"></use>
+                </svg>
+              </td>
+            </tr>
+            <tr class="tariff__table-row">
+              <td class="tariff__table-cell tariff__table-cell--first tariff__table-cell--first-comment">Комментарии</td>
+              <td class="tariff__table-cell">
+                <span class="tariff__cell-span tariff__cell--first-comment">Комментарии</span>
+                <svg class="tariff__icon tariff__icon--no" x="0px" y="0px" width="27px" height="26px">
                   <use xlink:href="#icon-no"></use>
                 </svg>
               </td>
               <td class="tariff__table-cell">
-                <span class="tariff__cell-span tariff__cell-comment3">Комментарии</span>
-                <svg class="tariff__icon tariff__icon-yes" x="0px" y="0px" width="31px" height="21px">
+                <span class="tariff__cell-span tariff__cell--second-comment">Комментарии</span>
+                <svg class="tariff__icon tariff__icon--no" x="0px" y="0px" width="27px" height="26px">
+                  <use xlink:href="#icon-no"></use>
+                </svg>
+              </td>
+              <td class="tariff__table-cell">
+                <span class="tariff__cell-span tariff__cell--third-comment">Комментарии</span>
+                <svg class="tariff__icon tariff__icon--yes" x="0px" y="0px" width="31px" height="21px">
                   <use xlink:href="#icon-yes"></use>
                 </svg>
               </td>
@@ -261,17 +260,17 @@
           <div class="wrapper">
             <p class="contacts__slogan">Остались вопросы? Свяжитесь с нами!</p>
             <ul class="contacts__list">
-              <li class="contacts__list-item contacts__tel">
-                <b class="contacts__tel-slogan contacts__head">Звоните:</b>
-                <a class="contacts__tel-link contacts__description" href="tel:+78125556666" tabindex="18">&nbsp;+7&nbsp;(812)&nbsp;555-66-66</a>
+              <li class="contacts__list-item contacts__list-item--tel">
+                <b class="contacts__tel-slogan contacts__tel-slogan--head">Звоните:</b>
+                <a class="contacts__tel-link contacts__tel-link--description" href="tel:+78125556666" tabindex="18">&nbsp;+7&nbsp;(812)&nbsp;555-66-66</a>
               </li>
-              <li class="contacts__list-item contacts__mail">
-                <b class="contacts__mail-slogan contacts__head">Пишите:</b>
-                <a class="contacts__mail-link contacts__description" href="mailto:mail@htmlacademy.ru" tabindex="19">mail@htmlacademy.ru</a>
+              <li class="contacts__list-item contacts__list-item--mail">
+                <b class="contacts__mail-slogan contacts__mail-slogan--head">Пишите:</b>
+                <a class="contacts__mail-link contacts__mail-link--description" href="mailto:mail@htmlacademy.ru" tabindex="19">mail@htmlacademy.ru</a>
               </li>
-              <li class="contacts__list-item contacts__address">
-                <b class="contacts__address-slogan contacts__head">Приезжайте в гости:</b>
-                <span class="contacts__address-description contacts__description">ул.&nbsp;Большая Конюшенная,&nbsp;19/8</span>
+              <li class="contacts__list-item contacts__list-item--address">
+                <b class="contacts__address-slogan contacts__address-slogan--head">Приезжайте в гости:</b>
+                <span class="contacts__address-description contacts__address-description--span">ул.&nbsp;Большая Конюшенная,&nbsp;19/8</span>
               </li>
             </ul>
           </div>
@@ -282,10 +281,10 @@
     </main>
     <footer class="page-footer">
         <a class="page-footer__logo" href="#" tabindex="20">
-          <svg class="page-footer__logo-image page-footer__logo--mobile" width="145px" height="40px">
+          <svg class="page-footer__logo-image page-footer__logo-image--mobile" width="145px" height="40px">
               <use class="page-footer__logo-use" href="#logo-pink-blue-mobile"></use>
           </svg>
-          <svg class="page-footer__logo-image page-footer__logo--desktop visually-hidden" width="145px" height="40px">
+          <svg class="page-footer__logo-image page-footer__logo-image--desktop visually-hidden" width="145px" height="40px">
               <use class="page-footer__logo-use" href="#logo-pink-blue-desktop"></use>
           </svg>
         </a>
