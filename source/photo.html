@@ -10,7 +10,7 @@
       <div class="page-svg visually-hidden">
         <include src="./build/img/sprite.svg"></include>
       </div>
-      <header class="page-header page-header__photo">
+      <header class="page-header page-header--photo">
       <div class="page-header__controls">
         <div class="page-header__wrapper wrapper">
           <div class="page-header__head">
@@ -27,14 +27,16 @@
                 </svg>
             </a>
             <!-- .main-nav-btn__toggle критерий Б5-->
-            <button class="main-nav-btn__toggle visually-hidden" type="button" value="открыть меню" tabindex="2">
-              <svg class="main-nav-btn__toggle-burger visually-hidden" x="0px" y="0px" width="50px" height="24px">
-                <use href="#icon-menu-burger"></use>
-              </svg>
-              <svg class="main-nav-btn__toggle-cross" x="0px" y="0px" width="24px" height="24px">
-                <use href="#icon-menu-cross"></use>
-              </svg>
-            </button>
+            <div class="main-nav-btn">
+              <button class="main-nav-btn__toggle visually-hidden" type="button" value="открыть меню" tabindex="2">
+                <svg class="main-nav-btn__toggle-burger visually-hidden" x="0px" y="0px" width="50px" height="24px">
+                  <use href="#icon-menu-burger"></use>
+                </svg>
+                <svg class="main-nav-btn__toggle-cross" x="0px" y="0px" width="24px" height="24px">
+                  <use href="#icon-menu-cross"></use>
+                </svg>
+              </button>
+            </div>
           </div>
           <nav class="main-nav">
               <ul class="main-nav__list site-list">
@@ -54,14 +56,14 @@
           </nav>
         </div>
       </div>
-      <section class="download-application__photo">
-          <h1 class="download-application__photo-head">Фотографии пользователей</h1>
+      <section class="download-application--photo">
+          <h1 class="download-application--photo-head">Фотографии пользователей</h1>
       </section>
     </header>
     <main class="page-main">
       <section class="photo">
         <div class="photo__wrapper wrapper">
-          <h2 class="visually-hidden">Список фотографий</h2>
+          <h2 class="photo__title visually-hidden">Список фотографий</h2>
           <p class="photo__slogan">Взгляните&nbsp;на&nbsp;фотографии,&nbsp;которые выкладывают пользователи! Видите,&nbsp;как&nbsp;не&nbsp;хватает&nbsp;ваших?</p>
           <ul class="photo__list">
             <li class="photo__item photo__item--first">
@@ -210,7 +212,7 @@
       </section>
       <section class="post">
         <div class="post__wrapper wrapper">
-          <h2 class="visually-hidden">Создание поста</h2>
+          <h2 class="post__title visually-hidden">Создание поста</h2>
           <p class="post__slogan">
             Затмите&nbsp;их&nbsp;всех!
             Выкладывайте&nbsp;все,&nbsp;что&nbsp;накопилось&nbsp;в телефоне!
@@ -231,29 +233,29 @@
               <div class="post__parameters">
                 <form class="post__form">
                   <div class="post__controls">
-                    <div class="post__panorama post__control">
-                      <label class="post__crop-label post__icon" for="post__range1" aria-label="Кроп" tabindex="21">
-                        <svg class="post__crop-svg post__panorama-icon post__icon-active" x="0px" y="0px" width="44px" height="44px">
+                    <div class="post__control post__control--panorama">
+                      <label class="post__icon post__icon--crop" for="post__range1" aria-label="Кроп" tabindex="21">
+                        <svg class="post__svg post__svg--panorama post__svg--active" x="0px" y="0px" width="44px" height="44px">
                           <use href="#icon-editor-crop"></use>
                         </svg>
                       </label>
-                      <input class="post__panorama-range post__input visually-hidden" type="range" id="post__range1" name="toggle" tabindex="22">
+                      <input class="post__input post__input--panorama visually-hidden" type="range" id="post__range1" name="toggle" tabindex="22">
                     </div>
-                    <div class="post__saturation post__control">
-                      <label class="post__saturation-label post__icon" for="post__range2" aria-label="Заливка" tabindex="23">
-                        <svg class="post__saturation-svg post__panorama-icon" x="0px" y="0px" width="48px" height="43px">
+                    <div class="post__control post__control--saturation">
+                      <label class="post__icon post__icon--saturation" for="post__range2" aria-label="Заливка" tabindex="23">
+                        <svg class="post__svg post__svg--panorama" x="0px" y="0px" width="48px" height="43px">
                           <use href="#icon-editor-fill"></use>
                         </svg>
                       </label>
-                      <input class="post__saturation-range post__input visually-hidden" type="range" id="post__range2" name="toggle" tabindex="24">
+                      <input class="post__input post__input--saturation visually-hidden" type="range" id="post__range2" name="toggle" tabindex="24">
                     </div>
-                    <div class="post__brightness post__control">
-                      <label class="post__brightness-label post__icon" for="post__range3" aria-label="Контраст" tabindex="25">
-                        <svg class="post__brightness-svg post__panorama-icon post__icon-brightness" x="0px" y="0px" width="32px" height="32px">
+                    <div class="post__control post__control--brightness">
+                      <label class="post__icon post__icon--brightness" for="post__range3" aria-label="Контраст" tabindex="25">
+                        <svg class="post__svg post__svg--panorama post__svg--brightness" x="0px" y="0px" width="32px" height="32px">
                           <use href="#icon-editor-contrast"></use>
                         </svg>
                       </label>
-                      <input class="post__brightness-range post__input visually-hidden" type="range" id="post__range3" name="toggle" tabindex="26">
+                      <input class="post__input post__input--brightness visually-hidden" type="range" id="post__range3" name="toggle" tabindex="26">
                     </div>
                   </div>
                   <button class="button post__submit post__button" type="submit" value="post__form-submit" tabindex="27">Запостить</button>

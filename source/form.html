@@ -10,7 +10,7 @@
     <div class="page-svg visually-hidden">
       <include src="./build/img/sprite.svg"></include>
     </div>
-    <header class="page-header page-header__form">
+    <header class="page-header page-header--form">
       <div class="page-header__controls">
         <div class="page-header__wrapper wrapper">
           <div class="page-header__head">
@@ -26,14 +26,16 @@
               </svg>
             </a>
             <!-- .main-nav-btn__toggle критерий Б5-->
-            <button class="main-nav-btn__toggle visually-hidden" type="button" value="открыть меню" tabindex="2">
-              <svg class="main-nav-btn__toggle-burger visually-hidden" x="0px" y="0px" width="50px" height="24px">
-                <use href="#icon-menu-burger"></use>
-              </svg>
-              <svg class="main-nav-btn__toggle-cross" x="0px" y="0px" width="24px" height="24px">
-                <use href="#icon-menu-cross"></use>
-              </svg>
-            </button>
+            <div class="main-nav-btn">
+              <button class="main-nav-btn__toggle visually-hidden" type="button" value="открыть меню" tabindex="2">
+                <svg class="main-nav-btn__toggle-burger visually-hidden" x="0px" y="0px" width="50px" height="24px">
+                  <use href="#icon-menu-burger"></use>
+                </svg>
+                <svg class="main-nav-btn__toggle-cross" x="0px" y="0px" width="24px" height="24px">
+                  <use href="#icon-menu-cross"></use>
+                </svg>
+              </button>
+            </div>
           </div>
           <nav class="main-nav">
               <ul class="main-nav__list site-list">
@@ -53,106 +55,106 @@
           </nav>
         </div>
       </div>
-      <section class="download-application__form">
-          <h1 class="download-application__form-head">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <section class="download-application--form">
+          <h1 class="download-application--form-head">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </section>
     </header>
     <main class="page-main">
       <section class="history">
-        <div class="history__wrapper">
-          <h2 class="visually-hidden">История пользователя</h2>
+        <div class="history__offer">
+          <h2 class="history__title visually-hidden">История пользователя</h2>
           <p class="history__slogan">
             Поделитесь своей историей и получите шанс выиграть ценный приз &mdash; 1000 миль&nbsp;на вашу бонусную карту! <span class="history__slogan-span visually-hidden">Пожалуйста, заполните форму ниже:</span>
           </p>
         </div>
           <form action="https://echo.htmlacademy.ru" class="history__form">
-            <fieldset class="history__form-fieldset history__form-persona">
+            <fieldset class="history__form-fieldset history__form-fieldset--persona">
               <div class="history-wrapper">
-                <ul class="history__persona history__list">
-                  <li class="history__surname history__persona-item">
-                    <label class="history__surname-label history__persona-label label-form" for="history__surname-id">Фамилия:</label>
-                    <input class="history__surname-input history__persona-input input-form" type="text" id="history__surname-id" placeholder="Укажите фамилию *" name="surname" tabindex="7" required>
+                <ul class="history__list history__list--persona">
+                  <li class="history__item history__item--persona history__item--surname">
+                    <label class="history__label history__label--surname history__label--persona" for="history__surname-id">Фамилия:</label>
+                    <input class="history__input history__input--surname history__input--persona" type="text" id="history__surname-id" placeholder="Укажите фамилию *" name="surname" tabindex="7" required>
                   </li>
-                  <li class="history__name history__persona-item">
-                    <label class="history__name-label history__persona-label label-form" for="history__name-id">Имя:</label>
-                    <input class="history__name-input history__persona-input input-form" type="text" id="history__name-id" placeholder="Введите ваше имя *" name="name" tabindex="8" required>
+                  <li class="history__item history__item--persona history__item--name">
+                    <label class="history__label history__label--name history__label--persona" for="history__name-id">Имя:</label>
+                    <input class="history__input history__input--name history__input--persona" type="text" id="history__name-id" placeholder="Введите ваше имя *" name="name" tabindex="8" required>
                   </li>
-                  <li class="history__patronymic history__persona-item">
-                    <label class="history__patronymic-label history__persona-label label-form" for="history__patronymic-id">Отчество:</label>
-                    <input class="history__patronymic-input history__persona-input input-form" type="text" id="history__patronymic-id" placeholder="Ну и отчество тоже" name="surname" tabindex="9">
+                  <li class="history__item history__item--persona history__item--patronymic">
+                    <label class="history__label history__label--patronymic history__label--persona" for="history__patronymic-id">Отчество:</label>
+                    <input class="history__input history__input--patronymic history__input--persona" type="text" id="history__patronymic-id" placeholder="Ну и отчество тоже" name="surname" tabindex="9">
                   </li>
                 </ul>
               </div>
             </fieldset>
-            <fieldset class="history__form-fieldset history__form-progress">
-              <legend class="history__form-legend history__form-legend--check"><span class="history__form-span history__form-check">Ваши&nbsp;безбашенные достижения&nbsp;в путешествии</span></legend>
+            <fieldset class="history__form-fieldset history__form-fieldset--progress">
+              <legend class="history__form-legend history__form-legend--check"><span class="history__form-span history__form-span--check">Ваши&nbsp;безбашенные достижения&nbsp;в путешествии</span></legend>
               <div class="history-wrapper">
-                  <ul class="history__progress history__list">
-                      <li class="history__selfie history__progress-item">
-                        <input class="history__selfie-input history__progress-input input-form" type="checkbox" id="history__selfie-id" name="progress" value="selfie" checked>
-                        <label class="history__selfie-label history__progress-label label-form" for="history__selfie-id" tabindex="10">Сделал селфи с акулой</label>
+                  <ul class="history__list history__list--progress">
+                      <li class="history__item history__item--selfie history__item--progress">
+                        <input class="history__input history__input--selfie history__input--progress" type="checkbox" id="history__selfie-id" name="progress" value="selfie" checked>
+                        <label class="history__label history__label--selfie history__label--progress" for="history__selfie-id" tabindex="10">Сделал селфи с акулой</label>
                       </li>
-                      <li class="history__norris history__progress-item">
-                        <input class="history__norris-input history__progress-input input-form" type="checkbox" id="history__norris-id" name="progress" value="norris">
-                        <label class="history__norris-label history__progress-label label-form" for="history__norris-id" tabindex="12">Видел Чака Норриса</label>
+                      <li class="history__item history__item--norris history__item--progress">
+                        <input class="history__input history__input--norris history__input--progress" type="checkbox" id="history__norris-id" name="progress" value="norris">
+                        <label class="history__label history__label--norris history__label--progress" for="history__norris-id" tabindex="12">Видел Чака Норриса</label>
                       </li>
-                      <li class="history__tower history__progress-item">
-                        <input class="history__tower-input history__progress-input input-form" type="checkbox" id="history__tower-id" name="progress" value="tower" checked>
-                        <label class="history__tower-label history__progress-label label-form" for="history__tower-id" tabindex="14">Удержал башню</label>
+                      <li class="history__item history__item--tower history__item--progress">
+                        <input class="history__input history__input--tower history__input--progress" type="checkbox" id="history__tower-id" name="progress" value="tower" checked>
+                        <label class="history__label history__label--tower history__label--progress" for="history__tower-id" tabindex="14">Удержал башню</label>
                       </li>
-                      <li class="history__burn history__progress-item">
-                        <input class="history__burn-input history__progress-input input-form" type="checkbox" id="history__burn-id" name="progress" value="burn" checked>
-                        <label class="history__burn-label history__progress-label label-form" for="history__burn-id" tabindex="11">Обгорел на пляже</label>
+                      <li class="history__item history__item--burn history__item--progress">
+                        <input class="history__input history__input--burn history__input--progress" type="checkbox" id="history__burn-id" name="progress" value="burn" checked>
+                        <label class="history__label history__label--burn history__label--progress" for="history__burn-id" tabindex="11">Обгорел на пляже</label>
                       </li>
-                      <li class="history__souvenir history__progress-item">
-                        <input class="history__souvenir-input history__progress-input input-form" type="checkbox" id="history__souvenir-id" name="progress" value="souvenir">
-                        <label class="history__souvenir-label history__progress-label label-form" for="history__souvenir-id" tabindex="13">Накупил сувениров</label>
+                      <li class="history__item history__item--souvenir history__item--progress">
+                        <input class="history__input history__input--souvenir history__input--progress" type="checkbox" id="history__souvenir-id" name="progress" value="souvenir">
+                        <label class="history__label history__label-souvenir history__label--progress" for="history__souvenir-id" tabindex="13">Накупил сувениров</label>
                       </li>
-                      <li class="history__hotel history__progress-item">
-                        <input class="history__hotel-input history__progress-input input-form" type="checkbox" id="history__hotel-id" name="progress" value="hotel">
-                        <label class="history__hotel-label history__progress-label label-form" for="history__hotel-id" tabindex="15">Разгромил отель</label>
+                      <li class="history__item history__item--hotel history__item--progress">
+                        <input class="history__input history__input--hotel history__input--progress" type="checkbox" id="history__hotel-id" name="progress" value="hotel">
+                        <label class="history__label history__label--hotel history__label--progress" for="history__hotel-id" tabindex="15">Разгромил отель</label>
                       </li>
                   </ul>
               </div>
             </fieldset>
-            <fieldset class="history__form-fieldset history__form-contact">
-              <legend class="history__form-legend history__form-legend--contact visually-hidden"><span class="history__form-span history__contact-head">Контактная информация</span></legend>
+            <fieldset class="history__form-fieldset history__form-fieldset--contact">
+              <legend class="history__form-legend history__form-legend--contact visually-hidden"><span class="history__form-span history__form-span--contact">Контактная информация</span></legend>
               <div class="history-wrapper">
-                <ul class="history__contact history__list">
-                  <li class="history__tel history__contact-item">
-                    <label class="history__tel-label history__contact-label label-form" for="history__tel-id">Номер телефона</label>
-                    <input class="history__tel-input history__contact-input input-form" type="tel" id="history__tel-id" placeholder="Номер, пожалуйста" name="tel" tabindex="16">
+                <ul class="history__list history__list--contact">
+                  <li class="history__item history__item--contact history__item--contact-tel">
+                    <label class="history__label history__label--contact history__label--contact-tel" for="history__tel-id">Номер телефона</label>
+                    <input class="history__input history__input--contact history__input--contact-tel" type="tel" id="history__tel-id" placeholder="Номер, пожалуйста" name="tel" tabindex="16">
                   </li>
-                  <li class="history__email history__contact-item">
-                    <label class="history__email-label history__contact-label label-form" for="history__email-id">Адрес почты</label>
-                    <input class="history__email-input history__contact-input input-form" type="email" id="history__email-id" placeholder="Введите почту *" name="email"  tabindex="17" required>
+                  <li class="history__item history__item--contact history__item--contact-email">
+                    <label class="history__label history__label--contact history__label--contact-email" for="history__email-id">Адрес почты</label>
+                    <input class="history__input history__input--contact history__item--contact-email" type="email" id="history__email-id" placeholder="Введите почту *" name="email"  tabindex="17" required>
                   </li>
                 </ul>
               </div>
             </fieldset>
-            <fieldset class="history__form-fieldset history__form-application">
-              <legend class="history__form-legend history__form-legend--application"><span class="history__form-span history__application-head">С каким приложением путешествовали?</span></legend>
+            <fieldset class="history__form-fieldset history__form-fieldset--application">
+              <legend class="history__form-legend history__form-legend--application"><span class="history__form-span history__form-span--application">С каким приложением путешествовали?</span></legend>
               <div class="history-wrapper">
-                <ul class="history__application-list history__list">
-                  <li class="history__ios history__application-item">
-                    <input class="history__ios-input history__application-input input-form" type="radio" id="history__ios-id" name="application" value="iOS" checked>
-                    <label class="history__ios-label history__application-label label-form" for="history__ios-id" tabindex="18">Pink для iOS</label>
+                <ul class="history__list history__list--application">
+                  <li class="history__item history__item--ios history__item--application">
+                    <input class="history__input history__input--ios history__input--application" type="radio" id="history__ios-id" name="application" value="iOS" checked>
+                    <label class="history__label history__label--ios history__label--application" for="history__ios-id" tabindex="18">Pink для iOS</label>
                   </li>
-                  <li class="history__android history__application-item">
-                    <input class="history__android-input history__application-input input-form" type="radio" id="history__android-id" name="application" value="android">
-                    <label class="history__android-label history__application-label label-form" for="history__android-id" tabindex="19">Pink на Android</label>
+                  <li class="history__item history__item--android history__item--application">
+                    <input class="history__input history__android-input history__input--application" type="radio" id="history__android-id" name="application" value="android">
+                    <label class="history__label history__label--android history__label--application" for="history__android-id" tabindex="19">Pink на Android</label>
                   </li>
-                  <li class="history__windows history__application-item">
-                    <input class="history__windows-input history__application-input input-form" type="radio" id="history__windows-id" name="application" value="windows">
-                    <label class="history__windows-label history__application-label label-form" for="history__windows-id" tabindex="20">Windows Phone</label>
+                  <li class="history__item history__item--windows history__item--application">
+                    <input class="history__input history__windows-input history__input--application" type="radio" id="history__windows-id" name="application" value="windows">
+                    <label class="history__label history__label--windows history__label--application" for="history__windows-id" tabindex="20">Windows Phone</label>
                   </li>
                 </ul>
               </div>
             </fieldset>
-            <fieldset class="history__form-fieldset history__form-emotion">
-              <legend class="history__form-legend history__emotion-legend"><span class="history__form-span history__emotion-head">Опишите свои эмоции</span></legend>
+            <fieldset class="history__form-fieldset history__form-fieldset--emotion">
+              <legend class="history__form-legend history__form-legend--emotion"><span class="history__form-span history__form-span--emotion">Опишите свои эмоции</span></legend>
               <div class="history-wrapper">
-                <textarea class="history__emotion" tabindex="21">Можно прям в красках, не стесняясь в выражениях</textarea>
+                <textarea class="history__form-textarea" tabindex="21">Можно прям в красках, не стесняясь в выражениях</textarea>
               </div>
             </fieldset>
             <div class="history__form-controls history-wrapper">
@@ -204,14 +206,14 @@
         </a>
     </footer>
     <div class="modal-error">
-      <h2 class="modal-error__header">Что-то пошло не&nbsp;так!</h2>
+      <h2 class="modal-error__title modal-error__header">Что-то пошло не&nbsp;так!</h2>
       <p class="modal-error__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       <div class="modal-error__block-button">
         <button class="modal-error__button modal-button">Oк</button>
       </div>
     </div>
     <div class="modal-success">
-      <h2 class="modal-success__header">Ваша заявка отправлена</h2>
+      <h2 class="modal-success__title modal-success__header">Ваша заявка отправлена</h2>
       <p class="modal-success__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее&nbsp;и оповестим вас.</p>
       <div class="modal-success__block-button">
         <button class="modal-success__button modal-button">Закрыть окно</button>

@@ -26,14 +26,16 @@
                 </svg>
             </a>
             <!-- .main-nav-btn__toggle критерий Б5-->
-            <button class="main-nav-btn__toggle visually-hidden" type="button" value="открыть меню" tabindex="2">
-              <svg class="main-nav-btn__toggle-burger visually-hidden" x="0px" y="0px" width="50px" height="24px">
-                <use xlink:href="#icon-menu-burger"></use>
-              </svg>
-              <svg class="main-nav-btn__toggle-cross" x="0px" y="0px" width="24px" height="24px">
-                <use xlink:href="#icon-menu-cross"></use>
-              </svg>
-            </button>
+            <div class="main-nav-btn">
+              <button class="main-nav-btn__toggle visually-hidden" type="button" value="открыть меню" tabindex="2">
+                <svg class="main-nav-btn__toggle-burger visually-hidden" x="0px" y="0px" width="50px" height="24px">
+                  <use xlink:href="#icon-menu-burger"></use>
+                </svg>
+                <svg class="main-nav-btn__toggle-cross" x="0px" y="0px" width="24px" height="24px">
+                  <use xlink:href="#icon-menu-cross"></use>
+                </svg>
+              </button>
+            </div>
           </div>
           <nav class="main-nav">
               <ul class="main-nav__list site-list">
@@ -55,7 +57,7 @@
       </div>
       <section class="download-application">
         <div class="download-application__wrapper">
-          <h2 class="visually-hidden">Загрузка приложения</h2>
+          <h2 class="download-application__title visually-hidden">Загрузка приложения</h2>
           <div class="download-application__content">
             <p class="download-application__slogan">Взгляните на жизнь иначе!</p>
             <a class="download-application__button" href="https://apps.apple.com/store" tabindex="7">Скачать приложение</a>
@@ -82,10 +84,10 @@
       </section>
     </header>
     <main class="page-main">
-      <h1 class="visually-hidden">Сайт фотоприложения для раскрашивания серых будней</h1>
+      <h1 class="page-main__title visually-hidden">Сайт фотоприложения для раскрашивания серых будней</h1>
       <section class="characteristics-application">
-        <h2 class="visually-hidden">Характеристики приложения</h2>
-        <div class="wrapper">
+        <h2 class="characteristics-application__title visually-hidden">Характеристики приложения</h2>
+        <div class="characteristics-application__wrapper wrapper">
           <p class="characteristics-application__slogan">
             <span class="characteristics-application__slogan-question">Устали от серости мегаполиса?</span>
             <span class="characteristics-application__slogan-answer">Нам&nbsp;есть,&nbsp;что&nbsp;вам предложить!</span>
@@ -116,7 +118,7 @@
             </svg>
           </div>
           <div class="news__block">
-            <h2 class="news__head">Эффект на&nbsp;24&nbsp;часа!</h2>
+            <h2 class="news__title news__head">Эффект на&nbsp;24&nbsp;часа!</h2>
             <p class="news__content">Британские ученые провели исследования и&nbsp;доказали,
             что&nbsp;положительный эффект от&nbsp;использования приложения длится целые&nbsp;сутки!</p>
             <a class="news__link" href="#" tabindex="11">Узнать больше об исследовании</a>
@@ -125,7 +127,7 @@
       </section>
       <section class="feedback">
         <div class="feedback__wrapper wrapper">
-          <h2 class="visually-hidden">Отзывы</h2>
+          <h2 class="feedback__title visually-hidden">Отзывы</h2>
           <input class="feedback__slider-input feedback__slider-input--first-slide" type="radio" id="feedback__slider--first-slide" name="feedback__toggle" checked>
           <input class="feedback__slider-input feedback__slider-input--second-slide" type="radio" id="feedback__slider--second-slide" name="feedback__toggle">
           <input class="feedback__slider-input feedback__slider-input--third-slide" type="radio" id="feedback__slider--third-slide" name="feedback__toggle">
@@ -164,7 +166,7 @@
       </section>
       <section class="tariff">
         <div class="tariff__wrapper wrapper">
-          <h2 class="visually-hidden">Тарифы</h2>
+          <h2 class="tariff__title visually-hidden">Тарифы</h2>
           <input class="tariff__slider-input tariff__slider-input--first-slide" type="radio" id="tariff__slider--first-slide" name="tariff__toggle">
           <input class="tariff__slider-input tariff__slider-input--second-slide" type="radio" id="tariff__slider--second-slide" name="tariff__toggle" checked>
           <input class="tariff__slider-input tariff__slider-input--third-slide" type="radio" id="tariff__slider--third-slide" name="tariff__toggle">
@@ -204,7 +206,7 @@
                 </svg>
               </td>
               <td class="tariff__table-cell">
-                <span class="tariff__cell-span tariff__cell--third-filter">Розовый фильтр</span>
+                <span class="tariff__cell-span tariff__cell-span--third-filter">Розовый фильтр</span>
                 <svg class="tariff__icon tariff__icon--yes" x="0px" y="0px" width="31px" height="21px">
                   <use xlink:href="#icon-yes"></use>
                 </svg>
@@ -213,19 +215,19 @@
             <tr class="tariff__table-row">
               <td class="tariff__table-cell tariff__table-cell--first tariff__table-cell--first-smile">Смайлики</td>
               <td class="tariff__table-cell">
-                <span class="tariff__cell-span tariff__cell--first-smile">Смайлики</span>
+                <span class="tariff__cell-span tariff__cell-span--first-smile">Смайлики</span>
                 <svg class="tariff__icon tariff__icon--no" x="0px" y="0px" width="27px" height="26px">
                   <use xlink:href="#icon-no"></use>
                 </svg>
               </td>
               <td class="tariff__table-cell">
-                <span class="tariff__cell-span tariff__cell--second-smile">Смайлики</span>
+                <span class="tariff__cell-span tariff__cell-span--second-smile">Смайлики</span>
                 <svg class="tariff__icon tariff__icon--yes" x="0px" y="0px" width="31px" height="21px">
                   <use xlink:href="#icon-yes"></use>
                 </svg>
               </td>
               <td class="tariff__table-cell">
-                <span class="tariff__cell-span tariff__cell--third-smile">Смайлики</span>
+                <span class="tariff__cell-span tariff__cell-span--third-smile">Смайлики</span>
                 <svg class="tariff__icon tariff__icon--yes" x="0px" y="0px" width="31px" height="21px">
                   <use xlink:href="#icon-yes"></use>
                 </svg>
@@ -234,19 +236,19 @@
             <tr class="tariff__table-row">
               <td class="tariff__table-cell tariff__table-cell--first tariff__table-cell--first-comment">Комментарии</td>
               <td class="tariff__table-cell">
-                <span class="tariff__cell-span tariff__cell--first-comment">Комментарии</span>
+                <span class="tariff__cell-span tariff__cell-span--first-comment">Комментарии</span>
                 <svg class="tariff__icon tariff__icon--no" x="0px" y="0px" width="27px" height="26px">
                   <use xlink:href="#icon-no"></use>
                 </svg>
               </td>
               <td class="tariff__table-cell">
-                <span class="tariff__cell-span tariff__cell--second-comment">Комментарии</span>
+                <span class="tariff__cell-span tariff__cell-span--second-comment">Комментарии</span>
                 <svg class="tariff__icon tariff__icon--no" x="0px" y="0px" width="27px" height="26px">
                   <use xlink:href="#icon-no"></use>
                 </svg>
               </td>
               <td class="tariff__table-cell">
-                <span class="tariff__cell-span tariff__cell--third-comment">Комментарии</span>
+                <span class="tariff__cell-span tariff__cell-span--third-comment">Комментарии</span>
                 <svg class="tariff__icon tariff__icon--yes" x="0px" y="0px" width="31px" height="21px">
                   <use xlink:href="#icon-yes"></use>
                 </svg>
@@ -256,7 +258,7 @@
         </div>
       </section>
       <section class="contacts">
-          <h2 class="visually-hidden">Контакты</h2>
+          <h2 class="contacts__title visually-hidden">Контакты</h2>
           <div class="wrapper">
             <p class="contacts__slogan">Остались вопросы? Свяжитесь с нами!</p>
             <ul class="contacts__list">
