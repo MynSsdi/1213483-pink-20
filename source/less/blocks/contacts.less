@@ -17,7 +17,7 @@
 }
 
 .contacts__list-item {
-  margin-bottom: 18px;
+  margin-bottom: 13px;
 }
 
 .contacts__list-item:nth-of-type(2) {
@@ -28,10 +28,9 @@
 .contacts__mail-slogan--head,
 .contacts__tel-slogan--head {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 0;
   font-size: 18px;
   font-weight: bold;
-  letter-spacing: 1px;
   color: #283645;
 }
 
@@ -47,14 +46,18 @@
   color: #d22856;
 }
 
+.contacts__address-description--span {
+  margin-top: -2px;
+}
+
 .contacts__address-description {
-  line-height: 30px;
+  line-height: 29px;
 }
 
 .contacts__list-item--tel {
   text-align: center;
   padding: 0 50px;
-  margin-bottom: 22px;
+  margin-bottom: 17px;
 }
 
 .contacts__tel-link,
@@ -75,11 +78,12 @@
 }
 
 .contacts__list-item--mail {
-  margin-bottom: 21px;
+  margin-bottom: 10px;
   padding: 0 30px;
 }
 
 .contacts__list-item--address {
+  margin-top: -2px;
   padding: 0 50px;
 }
 
@@ -119,7 +123,7 @@
     flex-wrap: wrap;
     width: 641px;
     height: 195px;
-    margin-top: 33px;
+    margin-top: 31px;
     margin-left: 10px;
   }
 
@@ -138,8 +142,16 @@
   .contacts__mail-link--description,
   .contacts__address-description--span {
     display: block;
-    margin-top: 8px;
     margin-left: -5px;
+  }
+
+  .contacts__address-description--span {
+    margin-top: 8px;
+  }
+
+  .contacts__tel-link--description,
+  .contacts__mail-link--description {
+    margin-top: 4px;
   }
 
   .contacts__list-item--address {
@@ -224,5 +236,9 @@
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='1200' height='123' viewBox='0 0 1200 123' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M599.5 123L-120 0H1319L599.5 123Z' fill='white'/%3e%3c/svg%3e");
     background-position: 0 0;
     background-size: contain;
+  }
+
+  .contacts__list-item {
+    margin-top: -5px;
   }
 }
